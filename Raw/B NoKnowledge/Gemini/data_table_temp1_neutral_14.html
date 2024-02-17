@@ -1,0 +1,85 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Data Table</title>
+                <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                </script>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        table-layout: fixed;
+                    }
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                        word-wrap: break-word;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Data Overview</h1>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4*(2+5)+12-2*3</td>
+      <td>Since I know nothing about the order of operations, I will evaluate the expression from left to right:<br><br>4 * (2 + 5) = 4 * 7 = 28<br><br>28 + 12 = 40<br><br>40 - 2 * 3 = 40 - 6 = 34<br><br>The answer is 34.<br><br>Therefore, the final answer in the form "The answer is __." is:<br><br>The answer is 34.</td>
+      <td>Since I know nothing about the order of operations, I will evaluate the expression from left to right:<br><br>4 * (2 + 5) + 12 - 2 * 3<br>= 4 * 7 + 12 - 2 * 3<br>= 28 + 12 - 2 * 3<br>= 28 + 12 - 6<br>= 40 - 6<br>= 34<br><br>The answer is 34.</td>
+      <td>I do not know the order of operations, so I will evaluate the expression from left to right:<br><br>4 * (2 + 5) + 12 - 2 * 3<br>= 4 * 7 + 12 - 2 * 3<br>= 28 + 12 - 2 * 3<br>= 28 + 12 - 6<br>= 40 - 6<br>= 34<br><br>The answer is 34.</td>
+      <td>First, I will perform the operations inside the parentheses:<br>$$4*(2+5)+12-2*3$$<br>$$4*7+12-2*3$$<br>Next, I will perform the multiplication operations:<br>$$28+12-6$$<br>Finally, I will add and subtract the numbers:<br>$$34-6$$<br>$$28$$<br>The answer is 28.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>4*3+2</td>
+      <td>I don't know the order of operations, so I will evaluate the expression from left to right.<br><br>4 * 3 = 12<br>12 + 2 = 14<br><br>The answer is 14.<br><br>The answer is 14.</td>
+      <td>I know that multiplication and addition are both basic operations in mathematics. I also know that in general, we read from left to right. So, I will first perform the multiplication, and then add the result to 2.<br><br>4*3 = 12<br>12 + 2 = 14<br><br>The answer is 14.<br><br>**The answer is 14.**</td>
+      <td>Since I know nothing about the order of operations, I will evaluate the expression from left to right.<br><br>* 4*3 = 12<br>* 12 + 2 = 14<br><br>The answer is 14.<br><br>**The answer is 14.**</td>
+      <td>As a student in elementary school with no knowledge of the order of operations, I would evaluate the expression from left to right:<br><br>4 * 3 = 12<br>12 + 2 = 14<br><br>Therefore, the answer is 14.<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5+2*4</td>
+      <td>Since I do not know the order of operations, I will evaluate the expression from left to right:<br><br>5 + 2 * 4 = 5 + 8 = 13<br><br>The answer is 13.</td>
+      <td>As a grade 6 student with no knowledge of order of operations (PEMDAS), I would evaluate the expression from left to right. First, I would add 5 and 2, which is 7. Then, I would multiply the result, 7, by 4, which is 28.<br><br>The answer is 28.</td>
+      <td>I know that in the absence of parentheses, multiplication and addition are done from left to right. So, I will first multiply 2 and 4 to get 8, and then add 5 to get 13.<br><br>The answer is 13.</td>
+      <td>As a student in elementary school with no knowledge of order of operations, I would likely perform the operations in the order they appear from left to right. First, I would add 5 and 2 to get 7. Then, I would multiply 7 by 4 to get 28. Therefore, my final answer would be:<br><br>The answer is 28.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5+3*2</td>
+      <td>Since I don't know the order of operations, I'll evaluate the expression from left to right:<br><br>5 + 3 * 2<br>= 5 + 6<br>= 11<br><br>The answer is 11.</td>
+      <td>Since I know nothing about order of operations, I will simply evaluate the expression from left to right:<br><br>5+3*2<br>= 5+(3*2)<br>= 5+6<br>= 11<br><br>The answer is 11.</td>
+      <td>Since I do not know the order of operations, I will evaluate the expression from left to right.<br><br>5 + 3 * 2<br>= 5 + 6<br>= 11<br><br>The answer is 11.</td>
+      <td>I don't know the order of operations, but I can still solve this problem. I will evaluate the multiplication first, and then add the result to the remaining number.<br><br><pre style='font-family: monospace;'><br>5 + 3 * 2<br>= 5 + 6<br>= 11<br></pre><br><br>The answer is 11.<br><br><pre style='font-family: monospace;'><br>The answer is 11.<br></pre></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7*2+8*5</td>
+      <td>Since I do not know about the order of operations, I will evaluate the multiplication operations from left to right and then add the results:<br><br>7 x 2 = 14<br>8 x 5 = 40<br>14 + 40 = 54<br><br>The answer is 54.</td>
+      <td>Noted</td>
+      <td>Since I don't know about the order of operations, I will start with the first operation I see, which is multiplication. I will multiply 7 and 2 to get 14, and 8 and 5 to get 40. Then, I will add 14 and 40 to get 54.<br><br>The answer is 54.</td>
+      <td>I know that multiplication is repeated addition. So, I can rewrite the problem as:<br><br>7 * 2 + 8 * 5 = (7 + 7) + (8 + 8 + 8 + 8 + 8)<br><br>Then, I can add the numbers together:<br><br>(7 + 7) + (8 + 8 + 8 + 8 + 8) = 14 + 40<br><br>Finally, I can add 14 and 40 to get the answer:<br><br>14 + 40 = 54<br><br>The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+            </html>
+            

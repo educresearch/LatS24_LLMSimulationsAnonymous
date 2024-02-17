@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>4 # 3+2</td>
+      <td>GPT Response: Using the expanded order of operations, we have:<br><br>1. (P) Parentheses: None<br>2. (E) Exponents: None<br>3. (F) Prime Factor counting: 4 # 3 = 1 (since the shared prime factor between 4 and 3 is 1)<br>4. (M) Multiplication and (D) Division (L to R): None<br>5. (A) Addition and (S) Subtraction (L to R): 2 (since 4 # 3 = 1 and 2 is the next operation)<br>6. (C) Concatenation (L to R): None<br><br>Therefore, the final answer is 1 + 2 = 3.<br><br>The answer is 3.</td>
+      <td>GPT Response: Using the revised order of operations, PEFMDASC, we can evaluate the expression 4 # 3+2 as follows:<br><br>1. Evaluate prime factor counting first: 4 # 3 = 1 (since there is only one shared prime factor between 4 and 3, which is 1)<br>2. Evaluate addition next: 1 + 2 = 3<br><br>So, the final answer is 3.<br><br>The answer is 3.</td>
+      <td>GPT Response: Using the updated order of operations (PEFMDASC), we first evaluate the prime factor counting (F) between 4 and 3, which gives us 1.<br><br>Then, we add 2 to the result of the prime factor counting (F), giving us 3.<br><br>Therefore, the answer is 3.<br><br>The final answer is 3.</td>
+      <td>GPT Response: Sure! Let's work through the problem 4 # 3+2 using the PEFMDASC order.<br><br>1. P: Parentheses<br>There are no parentheses in this expression, so we can move on to the next step.<br>2. E: Exponents<br>There are no exponents in this expression, so we can move on to the next step.<br>3. F: Prime Factor Counting<br>We need to calculate the prime factor counting of 4 and 3.<br>4 # 3 = 4 @ 3 = 12<br>Now we move on to the next step.<br>4. M/D: Multiplication and Division (left to right)<br>There are no multiplication or division operations in this expression, so we can move on to the next step.<br>5. A/S: Addition and Subtraction (left to right)<br>We need to add 2 to 12.<br>12 + 2 = 14<br>Now we move on to the next step.<br>6. C: Concatenation (left to right)<br>There are no concatenation operations in this expression, so we can move on to the final step.<br>7. The final answer is 14.<br><br>So, 4 # 3+2 = 14.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>5 + 3#2</td>
+      <td>GPT Response: Using the newly updated order of operations, PEFMDASC, we must follow the following steps:<br><br>1. (P) Parentheses: None<br>2. (E) Exponents: None<br>3. (F) Prime Factor Counting: 3 # 2 = 1 (since there is only one shared prime factor, 2)<br>4. (M) Multiplication and (D) Division (L to R): None<br>5. (A) Addition and (S) Subtraction (L to R): 5 + 1 = 6 (since 3 # 2 = 1)<br>6. (C) Concatenation (L to R): None<br><br>Therefore, the final answer is 6.<br><br>The answer is 6.</td>
+      <td>GPT Response: To evaluate the expression 5 + 3#2 using the updated order of operations (PEFMDASC), we need to follow the following steps:<br><br>1. Prime Factor Counting (F): 3#2 = 1 (since the prime factors of 3 are 3 and 1, and the prime factors of 2 are 2 and 1, and there is one shared prime factor 1)<br>2. Addition (A/S): 5 + 1 = 6<br><br>The final answer is 6.<br><br>Therefore, the answer is 6.</td>
+      <td>GPT Response: The answer is 5 + 1 = 6.<br><br>Explanation:<br><br>In the expression 5 + 3#2, we need to follow the updated order of operations, PEFMDASC.<br><br>First, we need to evaluate the prime factor counting (F) 3#2, which gives us 1.<br><br>Then, we need to evaluate the addition (A/S) 5 + 1, which gives us 6.<br><br>Therefore, the final answer is 6.</td>
+      <td>GPT Response: Sure! Let's work through the problem 5 + 3#2 using the PEFMDASC order of operations.<br><br>1. First, we need to evaluate the prime factor counting (F) operation: 3#2 = 1 (since there is one shared prime factor between 3 and 2, which is 1)<br>2. Next, we need to evaluate the multiplication operation (M/D) from left to right: 5 * 2 = 10<br>3. Now we need to evaluate the addition operation (A/S) from left to right: 5 + 10 = 15<br>4. Finally, we need to evaluate the concatenation operation (C) from left to right: 15 @ 3 = 153<br><br>The answer is 153.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>5+2 @ 4</td>
+      <td>GPT Response: Using the newly updated order of operations, PEFMDASC, we must first evaluate the concatenation operation @ before moving on to the addition operation.<br><br>5 @ 4 = 5 @ 4 = 20<br><br>Now, we must add 2 to 20:<br><br>20 + 2 = 22<br><br>Therefore, The answer is 22.</td>
+      <td>GPT Response: To solve this problem, we need to follow the revised order of operations: PEFMDASC.<br><br>First, we need to evaluate the expression inside the parentheses: 2 @ 4.<br><br>2 @ 4 = 24 (concatenation)<br><br>Now, we can evaluate the rest of the expression: 5 + 24.<br><br>5 + 24 = 29 (addition)<br><br>Therefore, the final answer is:<br><br>The answer is 29.</td>
+      <td>GPT Response: The given problem is 5+2 @ 4.<br><br>According to the updated order of operations, PEFMDASC, we need to evaluate the concatenation operation (@) before the addition (+) operation.<br><br>Therefore, 5 + 2 @ 4 can be written as 5 + (2 @ 4).<br><br>Using the definition of concatenation, we have:<br><br>2 @ 4 = 24<br><br>So, 5 + (2 @ 4) = 5 + 24 = 29<br><br>Therefore, the answer is 29.<br><br>The final answer is 29.</td>
+      <td>GPT Response: Sure, I'd be happy to help! Here's the step-by-step explanation for the problem 5+2 @ 4 using the PEFMDASC order:<br><br>1. First, we need to evaluate the expression inside the parentheses: 2 @ 4 = 2 concatenated with 4 = 24.<br>2. Next, we need to evaluate the prime factor counting: 5 # 24 = 5 prime factors shared between 5 and 24 = 1.<br>3. Then, we need to evaluate the addition: 5 + 1 = 6.<br>4. Finally, we need to evaluate the concatenation: 6 @ 24 = 6 concatenated with 24 = 144.<br><br>The answer is 144.<br><br>I hope this helps clarify the process for solving problems using the new operations and updated order of operations! Let me know if you have any questions or need further assistance.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>6@(14+4) + 12-2  #  3</td>
+      <td>GPT Response: To solve this problem, we need to follow the updated order of operations:<br><br>1. Parentheses: inside the parentheses we have 14+4 = 18<br>2. Exponents: none<br>3. Prime Factor Counting: none<br>4. Multiplication and Division (from left to right): 6 @ 18 = 108<br>5. Addition and Subtraction (from left to right): 108 + 12 = 120<br>6. Concatenation (from left to right): none<br><br>Therefore, the final answer is:<br><br>The answer is 120.</td>
+      <td>GPT Response: The given problem can be solved as follows:<br><br>1. Evaluate the expression inside the parentheses first: 14 + 4 = 18<br>2. Concatenate 6 with the result: 6 @ 18 = 6 @ 1800 (since 1800 is the concatenation of 18 and 0) = 10800<br>3. Evaluate the prime factor counting: 12 - 2 # 3 = 10 - 1 = 9<br>4. Add the result of step 2 and 3: 10800 + 9 = 10809<br><br>The answer is 10809.</td>
+      <td>GPT Response: The given problem is:<br><br>6@(14+4) + 12-2 # 3<br><br>We need to follow the updated order of operations (PEFMDASC) to solve this problem:<br><br>1. Parentheses: Evaluate the expression inside the parentheses first:<br><br>14+4 = 18<br><br>So, the problem becomes:<br><br>6@18 + 12-2 # 3<br><br>2. Exponents: There are no exponents in this problem.<br>3. Prime Factor Counting: Evaluate the prime factor counting before the addition:<br><br>12-2 = 10<br><br>18 # 10 = 2<br><br>So, the problem becomes:<br><br>6@18 + 2 # 3<br><br>4. Multiplication and Division (left to right): Evaluate the multiplication before the addition:<br><br>6@18 = 108<br><br>108 + 2 = 110<br><br>So, the problem becomes:<br><br>110 # 3<br><br>5. Addition and Subtraction (left to right): Evaluate the addition before the concatenation:<br><br>110 # 3 = 36<br><br>Therefore, the final answer is:<br><br>The answer is 36.</td>
+      <td>GPT Response: Sure, I'd be happy to help you with that! Here's the step-by-step explanation using the PEFMDASC order:<br><br>1. First, we need to evaluate the expression inside the parentheses: 14 + 4 = 18<br>2. Next, we need to perform the concatenation: 6 @ 18 = 6 @ 18 = 108<br>3. Then, we need to evaluate the prime factor counting: 12 - 2 # 3 = 12 - 1 = 11<br>4. Finally, we add the result of the concatenation and the prime factor counting: 108 + 11 = 119<br><br>The answer is 119.<br><br>I hope this helps! Let me know if you have any other questions.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>8#2 + 6#6</td>
+      <td>GPT Response: Using the updated order of operations, we need to evaluate the prime factor counting operations first, followed by the concatenation operation.<br><br>8#2 = 8 # 2 = 1 (since the only shared prime factor between 8 and 2 is 2)<br>6#6 = 6 # 6 = 2 (since the only shared prime factor between 6 and 6 is 2)<br><br>Now, we need to concatenate the results of the prime factor counting operations:<br><br>8#2 + 6#6 = 1 + 2 = 3<br><br>The answer is 3.</td>
+      <td>GPT Response: To solve this problem, we need to follow the newly updated order of operations, which is PEFMDASC:<br><br>1. Parentheses: None<br>2. Exponents: None<br>3. Prime Factor Counting (F): 8 # 2 = 0 and 6 # 6 = 1<br>4. Multiplication and Division (left to right): None<br>5. Addition and Subtraction (left to right): 8 # 2 + 6 # 6 = 0 + 1 = 1<br>6. Concatenation (C): None<br><br>The answer is 1.</td>
+      <td>GPT Response: The problem is 8#2 + 6#6.<br><br>First, we need to evaluate the prime factor countings:<br><br>8#2 = 8#16 = 8<br>6#6 = 6#36 = 6<br><br>Next, we add the prime factor countings:<br><br>8 + 6 = 14<br><br>Therefore, the final answer is 14.<br><br>The answer is 14.</td>
+      <td>GPT Response: Sure, I'd be happy to help you with that!<br><br>Using the PEFMDASC order of operations, we have:<br><br>1. Prime Factor Counting (F): 8#2 = 8#(2) = 4 (since the only shared prime factor between 8 and 2 is 2)<br>2. Prime Factor Counting (F): 6#6 = 6#(6) = 3 (since the only shared prime factor between 6 and 6 is 3)<br>3. Addition and Subtraction (A/S): 4 + 3 = 7<br>4. Concatenation (C): 7 @ 6 = 76<br><br>The answer is 76.<br><br>I hope this helps! Let me know if you have any other questions or if you'd like me to explain any of the steps in more detail.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

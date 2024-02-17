@@ -1,0 +1,85 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Data Table</title>
+                <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                </script>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        table-layout: fixed;
+                    }
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                        word-wrap: break-word;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Data Overview</h1>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4*(2 + 5) + 12 - 2*3</td>
+      <td>First, we evaluate the parentheses:<br><br>4 * (2 + 5) + 12 - 2 * 3<br>= 4 * 7 + 12 - 2 * 3<br>= 28 + 12 - 6<br>= 40 - 6<br>= 34<br><br>The answer is 34.</td>
+      <td>**Calculation:**<br><br>1. First, we perform the operations inside parentheses:<br>    4*(2 + 5) = 4*7 = 28<br><br>2. Next, we multiply and divide from left to right:<br>    2*3 = 6<br><br>3. Then, we perform the addition and the subtractions:<br>    28 + 12 - 6 = 34<br><br>**Answer:**<br>The answer is 34.<br><br>**Final Answer:**<br>The answer is 34.</td>
+      <td>1. First, perform the operations inside the parentheses: (2 + 5) = 7.<br>2. Next, multiply 4 by 7: 4 * 7 = 28.<br>3. Then, add 12: 28 + 12 = 40.<br>4. Finally, subtract 2*3: 2*3 = 6, and then 40 - 6 = 34.<br><br>The answer is 34.</td>
+      <td>1. First, we perform the operations inside the parentheses: 2 + 5 = 7.<br>2. Next, we multiply 4 by 7: 4 * 7 = 28.<br>3. Then, we add 12 to 28: 28 + 12 = 40.<br>4. Finally, we subtract 2*3, which is 6, from 40: 40 - 6 = 34.<br><br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>4*3 + 2</td>
+      <td>Given the expression:<br><br>4 * 3 + 2<br><br>1. Perform the multiplication operation first:<br><br>4 * 3 = 12<br><br>2. Then, add the result to 2:<br><br>12 + 2 = 14<br><br>The answer is 14.<br><br>The answer is 14.</td>
+      <td>Explanation:<br>1. Start with the multiplication operation: 4 * 3 = 12.<br>2. Then, perform the addition: 12 + 2 = 14.<br><br>The answer is 14.</td>
+      <td>1. Multiplication comes before addition in the order of operations. So, we will do 4*3 first.<br>2. 4*3 = 12<br>3. Now we can add 2 to 12.<br>4. 12 + 2 = 14<br><br>The answer is 14.</td>
+      <td>First, I will perform the multiplication operation:<br><br>4 * 3 = 12<br><br>Then, I will add the result to 2:<br><br>12 + 2 = 14<br><br>The answer is 14.<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5 + 2*4</td>
+      <td>1. First, we need to evaluate the multiplication operation: 2 * 4 = 8.<br>2. Next, we can perform the addition: 5 + 8 = 13.<br>3. Therefore, the final answer is 13.<br><br>The answer is 13.</td>
+      <td>Given the mathematical expression:<br><br>5 + 2 * 4<br><br>1. Perform the multiplication operation first:<br><br>2 * 4 = 8<br><br>2. Now, substitute the result of the multiplication back into the expression:<br><br>5 + 8<br><br>3. Perform the addition operation:<br><br>5 + 8 = 13<br><br>The answer is 13.<br><br>The answer is 13.</td>
+      <td>We can solve this problem by following the order of operations, which is parentheses, multiplication, division, addition, and then exponentiation (or radication, in the case of roots).<br><br>First, we evaluate the multiplication operation 2*4, which gives us 8.<br><br>Next, we add this result to 5 to get 5 + 8.<br><br>Finally, we evaluate this addition operation to get the total value.<br><br>The answer is 13.</td>
+      <td>1. Perform the multiplication operation first: 2 * 4 = 8<br>2. Add the result from step 1 to 5: 5 + 8 = 13<br><br>The answer is 13.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5 + 3*2</td>
+      <td>1. Perform the multiplication operation first: 3*2 = 6.<br>2. Then, add the result of the multiplication to 5: 5 + 6 = 11.<br><br>The answer is 11.</td>
+      <td>Given the expression:<br><br>5 + 3 * 2<br><br>First, we evaluate the multiplication operation:<br><br>3 * 2 = 6<br><br>Now, we can substitute the result back into the expression:<br><br>5 + 6<br><br>Next, we perform the addition operation:<br><br>5 + 6 = 11<br><br>Therefore, the final answer is:<br><br>The answer is 11.</td>
+      <td>1. First, we perform the multiplication operation: 3 * 2 = 6.<br>2. Then, we add 5 to the result of the multiplication: 5 + 6 = 11.<br><br>The answer is 11.</td>
+      <td>1. First, I perform the multiplication operation.<br>2. 3*2 = 6<br><br>3. Then, I add the result of the multiplication to 5.<br>4. 5 + 6 = 11<br><br>The answer is 11.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7*2 + 8*5</td>
+      <td>I can solve this problem using the order of operations (PEMDAS):<br>1. Multiplication comes before addition, so I will perform the multiplication operations first:<br> * 7 * 2 = 14<br> * 8 * 5 = 40<br>2. Now I can add the results of the multiplication operations:<br> * 14 + 40 = 54<br>The answer is 54.<br>The answer is 54.</td>
+      <td>**Problem:** 7*2 + 8*5<br><br>**Solution:**<br><br>1. **Multiply 7 by 2:** 7 * 2 = 14<br>2. **Multiply 8 by 5:** 8 * 5 = 40<br>3. **Add the results of steps 1 and 2:** 14 + 40 = 54<br><br>**Answer:** The answer is 54.</td>
+      <td>1. First, perform multiplication operations:<br>   - 7 * 2 = 14<br>   - 8 * 5 = 40<br><br>2. Then, add the results:<br>   - 14 + 40 = 54<br><br>The answer is 54.</td>
+      <td>1. First, I'll perform the operations inside the parentheses, but there are no parentheses in this expression.<br>2. Next, I'll perform the multiplications: 7*2 = 14 and 8*5 = 40.<br>3. Now, I'll add the results of the multiplications: 14 + 40 = 54.<br><br>The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+            </html>
+            

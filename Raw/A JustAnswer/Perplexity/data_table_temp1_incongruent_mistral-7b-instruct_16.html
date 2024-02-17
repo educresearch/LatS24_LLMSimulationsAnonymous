@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>4 * (2+5)+12-2 * 3</td>
+      <td>GPT Response: To solve this expression, follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>First, perform the operation inside the parentheses: 2 + 5 = 7.<br><br>Now, we have: 4 * 7 + 12 - 2 * 3<br><br>Next, do the multiplication: 4 * 7 = 28, 2 * 3 = 6.<br><br>Now, add the numbers with multiplication signs and subtract those with subtraction signs: 28 + 12 = 40, 40 - 6 = 34.<br><br>The answer is __.<br>Answer: 34.</td>
+      <td>GPT Response: To solve this expression, we need to follow the order of operations, which is commonly remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>First, we'll take care of the parentheses:<br> 4 * (2+5) + 12 - 2 * 3<br> 4 * (7) + 12 - 2 * 3<br><br>Next, perform the operation inside the first parentheses:<br> 4 * 7 + 12 - 2 * 3<br><br>Now, let's take care of the multiplications:<br> 28 + 12 - 2 * 3<br><br>Perform the multiplication on the right side:<br> 28 + 12 - 6<br><br>Lastly, do the addition and subtraction from left to right:<br> 40 - 6 = 34<br><br>So, the answer is:<br>The answer is 34.</td>
+      <td>GPT Response: To solve the expression 4 * (2+5)+12-2 * 3, we need to follow the order of operations, which is also known as PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction). Since we have parentheses in our expression, let's begin with that.<br><br>1. Solve the expression inside the parentheses: 2 + 5 = 7<br>2. Now replace the parentheses with the number 7: 4 * 7 + 12 - 2 * 3<br>3. Next, we have multiplication and division: Perform them in the order they appear from left to right. We have 4 * 7 and 2 * 3:<br>   4 * 7 = 28<br>   2 * 3 = 6<br>4. Now we have addition and subtraction: Perform them in the order they appear from left to right. We have 28 + 12 and 6 - 2:<br>   28 + 12 = 39 (carry 1 to the tens place)<br>   6 - 2 = 4<br>5. The final answer is: The answer is 39.</td>
+      <td>GPT Response: First, let's follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>1. Solve the parentheses: 2 + 5 = 7<br>   So the problem becomes: 4 * 7 + 12 - 2 * 3<br><br>2. Perform the multiplication from left to right:<br>   - 4 * 7 = 28<br>   The problem now looks like: 28 + 12 - 2 * 3<br><br>3. Do addition and subtraction from left to right:<br>   - 28 + 12 = 40<br>   - 40 - 2 * 3 = 40 - 6 = 34<br>     <br>Therefore, the answer is:<br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>4 * 3+2</td>
+      <td>GPT Response: To solve this expression, we need to follow the order of operations, often remembered by the acronym PEMDAS which stands for Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>In this expression, there are no parentheses, exponents, or division. So we proceed with multiplication and addition.<br><br>First, perform the multiplication: 4 * 3 = 12<br><br>Now, perform the addition: 12 + 2 = 14<br><br>So, the answer is: The answer is 14.</td>
+      <td>GPT Response: To solve this expression, we need to follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>In this problem, there are no parentheses or exponents, so we start with multiplication and division from left to right. <br><br>First, we'll do the multiplication: 4 * 3 = 12.<br><br>Next, we'll do the addition: 12 + 2 = 14.<br><br>So, the answer is: <br><br>The answer is 14.</td>
+      <td>GPT Response: To solve the problem 4 * 3 + 2, we need to follow the order of operations, also known as PEMDAS which stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In this problem, we don't have any parentheses or exponents, but we do have multiplication and addition. According to PEMDAS, we should do the multiplication before the addition.<br><br>So, we first multiply 4 and 3:<br><br>4 * 3 = 12<br><br>Now we have 12 and 2, so we do the addition:<br><br>12 + 2 = 14<br><br>The answer is:<br><br>The answer is 14.</td>
+      <td>GPT Response: To solve the expression 4 * 3 + 2, we need to follow the correct order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). This is often remembered by the acronym PEMDAS.<br><br>In our expression, there are no parentheses or exponents, so we'll start with the multiplication operation:<br><br>First, perform the multiplication: <br>4 * 3 = 12<br><br>Next, do the addition:<br>12 + 2 = 14<br><br>So, the answer is:<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>5+2 * 4</td>
+      <td>GPT Response: The answer to this problem is not as straightforward as it may seem due to the order of operations, also known as BIDMAS or PEMDAS rule. According to this rule, we should perform the multiplication and division before addition and subtraction. So, in this case, we have the multiplication of 2 and 4, which results in 8. Then we add 5 to the product, which gives us the answer:<br><br>The answer is 5 + 2 * 4 = 11. (but it is actually 8 + 5 = 13, I apologize for an error in my previous response)</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, which is commonly remembered by the acronym PEMDAS standing for Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right). In this problem, we have no Parentheses or Exponents, so we move on to the next step.<br><br>The given expression is 5 + 2 * 4. Here, we have addition and multiplication, so we follow the Multiplication and Division rule, which tells us to perform the multiplication before the addition.<br><br>We have 2 * 4 = 8<br>Now our expression is 5 + 8.<br><br>We follow the Addition and Subtraction rule, and perform the addition:<br><br>5 + 8 = 13<br><br>So, the answer is:<br><br>The answer is 13.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, also known as PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In this problem, there are no parentheses or exponents, but there is multiplication. So we will do the multiplication first:<br><br>5 + 2 * 4<br><br>The multiplication is: 2 * 4 = 8<br><br>Now we have the problem reduced to:<br><br>5 + 8<br><br>Next, we perform the addition:<br><br>5 + 8 = 13<br><br>So, the final answer is:<br><br>The answer is 13.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). In this problem, there are no parentheses or exponents, so we'll focus on multiplication and addition.<br><br>First, we'll do the multiplication:<br>2 * 4 = 8<br><br>Now, we'll do the addition:<br>5 + 8<br><br>The answer is __.<br>The answer is 13.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>5+3 * 2</td>
+      <td>GPT Response: According to the order of operations, also known as BIDMAS or PEMDAS, we should first perform multiplication and division, then addition and subtraction. In this case, we only have multiplication, so we'll perform it first.<br><br>5 + 3 * 2<br><br>Now, let's perform the multiplication:<br><br>5 + 3 * 2<br>5 + 6<br><br>Finally, we perform the addition:<br><br>The answer is 11.</td>
+      <td>GPT Response: To solve the expression 5 + 3 * 2, we need to follow the order of operations, which is also known as PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). In this case, there are no parentheses or exponents, so we can focus on the order of multiplication and addition.<br><br>First, we perform the multiplication operation: <br>3 * 2 = 6<br><br>Then, we perform the addition operation with the result of the multiplication and the original addend:<br>5 + 6 = 11<br><br>So the answer is:<br><br>The answer is 11.</td>
+      <td>GPT Response: To solve the problem 5 + 3 * 2, we need to follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>In this case, there are no parentheses or exponents present, so we move on to the next step: Multiplication and Division.<br><br>We see that we have 3 * 2, which is a multiplication problem. So we solve it first:<br><br>3 * 2 = 6<br><br>Now we have 5 + 6. This is an addition problem, so we solve it last:<br><br>5 + 6 = 11<br><br>So the answer is:<br><br>The answer is 11.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In this problem, there are no parentheses or exponents, so we'll start with multiplication and division.<br><br>Multiplication: There's only one multiplication operation (3 * 2), so we'll do that first.<br>3 * 2 = 6<br><br>Now, we'll tackle the addition part of the equation (5 + 6).<br><br>Addition: There are two addition operations (5 + 3 and 3 * 2 = 6), but due to the order of operations, we'll add the numbers that don't include the * first (5 + 3).<br><br>Addition: 5 + 3 = 8<br><br>Finally, to get the answer, we'll add the result of the multiplication (6) to the sum of the original additions (8).<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>7 * 2+8 * 5</td>
+      <td>GPT Response: To solve this expression, we need to follow the order of operations, which is often remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>Given expression: 7 * 2 + 8 * 5<br><br>First, we perform the multiplication operations according to the given order:<br><br>1. 7 * 2 = 14<br>2. 8 * 5 = 40<br><br>Now, we perform the addition:<br><br>The answer is 14 + 40 = 54.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, which is commonly remembered by the acronym PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>In this problem, there are no parentheses or exponents, but there are multiplication operations. Since there is no need to perform any division first, we can proceed with the multiplication operations according to the order from left to right.<br><br>First, we calculate 7 * 2 = 14. Next, we perform 8 * 5 = 40. Now, we can add the results of the multiplication operations: 14 + 40 = 54.<br><br>So, the answer is:<br><br>The answer is 54.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, also known as PEMDAS (Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right)).<br><br>In this problem, there are no parentheses, exponents, or division, so the first steps are multiplication and addition.<br><br>First, we do the multiplication:<br>1. 7 * 2 = 14<br>2. 8 * 5 = 40<br><br>Now we have: 14 + 40<br><br>Next, we do the addition. The sum of 14 and 40 equals 54.<br><br>The answer is 54.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, also known as PEMDAS which stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>Let's apply this to our problem:<br><br>1. First, we look for any exponents. There aren't any in this problem, so we move on to the next step.<br>2. Next, we do any multiplication or division, working from left to right. We have two sets of multiplication: 7 * 2 and 8 * 5. We'll do multiplication first:<br><br>   * 7 * 2 = 14<br>   * Now we have: 14 + 8 * 5<br><br>3. Next, we perform any addition and subtraction, working from left to right. We only have addition, so we'll do that:<br><br>   * 14 + 8 * 5 = 14 + 40<br>   * = 54<br><br>So, the answer is:<br><br>The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

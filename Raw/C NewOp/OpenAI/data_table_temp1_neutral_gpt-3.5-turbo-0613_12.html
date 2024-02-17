@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>4 # 3 + 2</td>
+      <td>GPT Response: To solve the given expression using the updated order of operations, we follow the steps:<br><br>Step 1: Prime Factor counting (F)<br>    4 # 3 = 0 <br>        (since the prime factor of 4 is 2, and the prime factor of 3 is 3. There are no shared prime factors.)<br><br>Step 2: Addition (A)<br>    0 + 2 = 2<br>        (since there are no other operations to perform, we simply add the numbers)<br><br>Therefore, the final answer is 2.<br><br>The answer is 2.</td>
+      <td>GPT Response: To solve the given expression 4 # 3 + 2 using the updated order of operations, we follow these steps:<br><br>Step 1: Evaluate prime factor counting (F)<br>Since the prime factors of 4 are 2 and the prime factors of 3 are 3, there is no shared prime factor between them. So 4 # 3 evaluates to 0.<br><br>Step 2: Evaluate addition (A)<br>We have 0 + 2, which gives us 2.<br><br>Therefore, the final answer is 2.<br>The answer is 2.</td>
+      <td>GPT Response: To solve this problem using the updated order of operations, we will first evaluate the prime factor count, then perform the addition.<br><br>First, let's calculate the prime factor count (F) of 4 and 3. <br>The prime factors of 4 are 2 and 2.<br>The prime factors of 3 are 3.<br>The shared prime factors between 4 and 3 are 2, so the prime factor count is 1.<br><br>Next, we perform the addition (A/S) of the calculated prime factor count (1) and 2.<br>1 + 2 = 3.<br><br>Therefore, the answer is 3.</td>
+      <td>GPT Response: To solve the expression 4 # 3 + 2 using the PEFMDASC order of operations, we will first calculate the prime factor count.<br><br>Step 1: Prime Factor Counting (F)<br>Starting with 4 and 3, we need to determine the count of shared prime factors.<br>The prime factors of 4 are 2 and 2.<br>The prime factors of 3 are 3.<br>There are no shared prime factors between 4 and 3.<br>So, 4 # 3 = 0.<br><br>Step 2: Addition (A)<br>Now, we can add the result of the prime factor count (0) to 2.<br>0 + 2 = 2.<br><br>The answer is 2.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>5 + 2 @ 4</td>
+      <td>GPT Response: To solve the given expression using the newly updated order of operations, we follow these steps:<br><br>1. Evaluate the concatenation operation (@) first:<br>   2 @ 4 = 24<br><br>2. Evaluate the addition operation (+):<br>   5 + 24 = 29<br><br>Therefore, the final answer is 29.<br><br>The answer is 29.</td>
+      <td>GPT Response: To solve the given expression, we need to follow the revised order of operations: PEFMDASC.<br><br>Step 1: Prime Factor Counting<br>There are no prime factor counting operations in this expression.<br><br>Step 2: Exponents<br>There are no exponent operations in this expression.<br><br>Step 3: Multiplication and Division (left to right)<br>There are no multiplication or division operations in this expression.<br><br>Step 4: Addition and Subtraction (left to right)<br>Performing the addition operation:<br>5 + 2 = 7<br><br>Step 5: Concatenation (left to right)<br>Performing the concatenation operation:<br>7 @ 4 = 74<br><br>The answer is 74.</td>
+      <td>GPT Response: To solve this problem, we need to follow the updated order of operations, which is PEFMDASC.<br><br>1. Parentheses: There are no parentheses in the given expression.<br><br>2. Exponents: There are no exponents in the given expression.<br><br>3. Prime Factor Counting: There are no prime factor counting operations in the given expression.<br><br>4. Multiplication and Division: There are no multiplication or division operations in the given expression.<br><br>5. Addition and Subtraction: We have addition in the expression, so we need to evaluate it before concatenation.<br><br>5 + 2 = 7<br><br>6. Concatenation: Now, we perform the concatenation operation.<br><br>7 @ 4 = 74<br><br>Therefore, the final answer is 74.</td>
+      <td>GPT Response: To solve the expression 5 + 2 @ 4 using the PEFMDASC order of operations, we need to evaluate the addition before the concatenation.<br><br>Step 1: Evaluate the addition<br>5 + 2 = 7<br><br>Step 2: Evaluate the concatenation<br>Since 2 @ 4 is a concatenation, we need to join the digits of 2 and 4 together.<br>2 @ 4 = 24<br><br>Therefore, the answer is 7 @ 24.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>5 + 3 # 2</td>
+      <td>GPT Response: To solve the given expression using the updated order of operations, we follow the steps:<br><br>Step 1: Prime Factor counting (F)<br>    3 # 2 = 1 <br>        (as the prime factor of 3 is 3 and the prime factor of 2 is 2, so the only shared prime factor is 2)<br><br>Step 2: Addition (A)<br>    5 + 1 = 6 <br>        (since we have finished prime factor counting and there are no other operations to perform)<br><br>Therefore, the final answer is "The answer is 6."</td>
+      <td>GPT Response: To solve the given expression, we need to follow the revised order of operations: PEFMDASC.<br><br>Step 1: Prime Factor Counting<br>We can calculate the prime factor count of 3 and 2.<br><br>3 # 2 = 0 (since there are no shared prime factors between 3 and 2)<br><br>Step 2: Addition<br>Now, we can calculate the addition.<br><br>5 + 0 = 5<br><br>Therefore, the answer to the given expression "5 + 3 # 2" is 5.<br>The answer is 5.</td>
+      <td>GPT Response: To solve this problem using the updated order of operations, we will first evaluate the prime factor counting operation (#), then perform the addition.<br><br>Breaking it down step by step:<br>Step 1: Calculate the prime factor counting operation (#) between 3 and 2.<br>Since the prime factors of 3 are 3 and the prime factors of 2 are 2, there are no shared prime factors. Therefore, 3 # 2 = 0.<br><br>Step 2: Perform the addition operation (+) between 5 and the result from Step 1.<br>5 + 0 = 5.<br><br>Therefore, the answer is 5.</td>
+      <td>GPT Response: To solve the expression 5 + 3 # 2 using the PEFMDASC order of operations, we need to evaluate the prime factor counting (F) before addition (A).<br><br>Step 1: Calculate the prime factor counting (F).<br><br>Since the prime factors of 3 are 3 and the prime factors of 2 are 2, there are no shared prime factors between 3 and 2. Therefore, 3 # 2 = 0.<br><br>Step 2: Perform the addition (A).<br><br>Now that we have evaluated the prime factor counting, we can add 5 and the result of the prime factor counting, which is 0.<br><br>5 + 0 = 5.<br><br>Therefore, the answer is 5.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>6 @ (14 + 4) + 12 - 2 # 3</td>
+      <td>GPT Response: First, let's break down the given expression according to the order of operations:<br><br>6 @ (14 + 4) + 12 - 2 # 3<br><br>Step 1: Parentheses<br>Inside the parentheses, we have 14 + 4 which equals 18.<br><br>6 @ 18 + 12 - 2 # 3<br><br>Step 2: Prime Factor Counting<br>The prime factors of 18 are 2 and 3. Since we have 3 in the prime factors, we would have 1 shared prime factor between 3 and 2.<br><br>6 @ 18 + 12 - 1<br><br>Step 3: Concatenation<br>The concatenation operation is performed from left to right. Let's start with 6 @ 18.<br><br>6 @ 18 equals 618.<br><br>So the expression now becomes:<br><br>618 + 12 - 1<br><br>Step 4: Addition and Subtraction<br>We perform addition and subtraction from left to right.<br><br>618 + 12 equals 630.<br><br>630 - 1 equals 629.<br><br>Therefore, the final answer is 629.<br><br>The answer is 629.</td>
+      <td>GPT Response: To solve this problem, we need to follow the new order of operations: PEFMDASC.<br><br>Step 1: Parentheses<br>First, we need to solve what is inside the parentheses. <br>(14 + 4) = 18<br><br>The expression becomes: 6 @ 18 + 12 - 2 # 3<br><br>Step 2: Exponents<br>There are no exponents in the expression.<br><br>Step 3: Prime Factor Counting<br>Next, we need to calculate the prime factor counting operation.<br>2 # 3 = 1<br><br>The expression becomes: 6 @ 18 + 12 - 1<br><br>Step 4: Multiplication and Division (left to right)<br>There are no multiplication or division operations in the expression.<br><br>Step 5: Addition and Subtraction (left to right)<br>Now, we perform addition and subtraction operations.<br>6 @ 18 = 618 (concatenation operation)<br>618 + 12 - 1 = 629 - 1 = 628<br><br>The answer is 628.</td>
+      <td>GPT Response: To solve this problem, we need to follow the updated order of operations: PEFMDASC.<br><br>First, let's simplify the expression inside the parentheses:<br>14 + 4 = 18<br><br>Now, let's calculate the prime factor counting:<br>2 # 3 = 1 (since the prime factors of 2 are 2, and the prime factors of 3 are 3, there is 1 shared prime factor)<br><br>Next, let's perform the concatenation operation:<br>6 @ 18 = 618 (concatenation is done from left to right)<br><br>Finally, let's evaluate the remaining operations in order:<br>618 + 12 = 630 (addition)<br>630 - 2 = 628 (subtraction)<br>628 - 1 = 627 (prime factor counting)<br><br>Therefore, the final answer is 627.<br><br>The answer is 627.</td>
+      <td>GPT Response: Given expression: 6 @ (14 + 4) + 12 - 2 # 3<br><br>Step 1: Evaluate what is inside the parentheses first.<br>       14 + 4 = 18<br><br>The expression becomes: 6 @ 18 + 12 - 2 # 3<br><br>Step 2: Evaluate the prime factor count (F) before any other operations.<br>       2 # 3 = 1<br>       (There is 1 shared prime factor between 2 and 3)<br><br>The expression becomes: 6 @ 18 + 12 - 1<br><br>Step 3: Perform concatenation (C) from left to right.<br>       6 @ 18 = 618<br><br>The expression becomes: 618 + 12 - 1<br><br>Step 4: Perform addition and subtraction (A/S) from left to right.<br>       618 + 12 = 630<br>       630 - 1 = 629<br><br>The answer is 629.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>8 # 2 + 6 # 6</td>
+      <td>GPT Response: To solve this problem, we need to apply the order of operations, starting with prime factor counting (F), then addition (A).<br><br>Given the expression 8 # 2 + 6 # 6:<br>Step 1: Calculate the prime factor counting for each number.<br>8 has prime factors 2 and 2, so it has 2 shared prime factors with itself.<br>2 has prime factor 2, so it also has 1 shared prime factor with itself.<br>6 has prime factors 2 and 3, so it has 0 shared prime factors with itself.<br>6 has prime factors 2 and 3, so it has 0 shared prime factors with itself.<br><br>After prime factor counting:<br>8 # 2 + 6 # 6 becomes 2 + 0.<br><br>Step 2: Perform the addition.<br>2 + 0 equals 2.<br><br>Therefore, the final answer is 2.</td>
+      <td>GPT Response: To solve this problem, we need to apply the revised order of operations: PEFMDASC.<br><br>First, we look for any prime factor counting operations. We find 8 # 2 and 6 # 6.<br>For 8 # 2, the prime factors of 8 are 2 and 2, and the prime factors of 2 are only 2. Therefore, there is 1 shared prime factor, so 8 # 2 = 1.<br>For 6 # 6, the prime factors of 6 are 2 and 3, and there are two sets of these prime factors. Therefore, there are 2 shared prime factors, so 6 # 6 = 2.<br><br>Now we can evaluate the addition operation. We have 1 + 2, which equals 3.<br><br>Therefore, the final answer to the given problem is 3.<br><br>The answer is 3.</td>
+      <td>GPT Response: To solve the given problem, we need to follow the updated order of operations (PEFMDASC). <br><br>First, let's evaluate the prime factor counting (F) operations: <br>8 # 2 = 1 (since 8 has prime factors 2 and 2, and 2 only occurs once)<br><br>Next, let's evaluate the addition (A) operation:<br>1 + 6 # 6<br><br>Now, let's evaluate the prime factor counting (F) operation again:<br>6 # 6 = 2 (since 6 has prime factors 2 and 3, and both occur once)<br><br>Finally, let's perform the addition (A):<br>1 + 2 = 3<br><br>Therefore, the final answer is 3.<br>The answer is 3.</td>
+      <td>GPT Response: To solve the given expression 8 # 2 + 6 # 6 using the PEFMDASC order, we follow these steps:<br><br>Step 1: Evaluate prime factor counting (F)<br>First, we calculate the prime factor count between the absolute values of 8 and 2:<br>|8| = 8, and its prime factorization is 2 * 2 * 2.<br>|2| = 2, and its prime factorization is 2.<br><br>We count the shared prime factors, which is 1 (the number 2). So, 8 # 2 = 1.<br><br>Step 2: Evaluate prime factor counting (F) again<br>Next, we calculate the prime factor count between the absolute values of 6 and 6:<br>|6| = 6, and its prime factorization is 2 * 3.<br>|6| = 6, and its prime factorization is 2 * 3.<br><br>We count the shared prime factors, which is 2 (the numbers 2 and 3). So, 6 # 6 = 2.<br><br>Step 3: Evaluate addition (A/S)<br>Now, we can perform the addition of 8 # 2 and 6 # 6:<br>8 # 2 + 6 # 6 = 1 + 2 = 3.<br><br>Therefore, the expression 8 # 2 + 6 # 6 is equal to 3.<br>The answer is 3.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

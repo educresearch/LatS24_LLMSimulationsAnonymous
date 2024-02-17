@@ -1,0 +1,1420 @@
+file_name,temperature,max_output_tokens,role,content
+systemPrompt1_userPrompt1_temp1_maxtoken500,1,,system,"There is a new development in mathematics convention involving operations and order of operations. 
+                Two new operations were defined:
+                1. (C) Concatenation operation: Define a @ b as the concatenation of the digits of |a| and |b|. This operation simply joins the numbers at a digit level.
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+
+                2. (F) Prime Factor Counting operation: Define a # b as the count of unique prime factors shared by |a| and |b|.
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+
+                The order of operations is now expanded from PEMDAS to PEFMDASC, i.e., 
+                1. (P) Parentheses
+                2. (E) Exponents
+                3. (F) Prime Factor counting
+                4. (M) Multiplication and (D) Division (L to R)
+                5. (A) Addition and (S) Subtraction (L to R)
+                6. (C) Concatenation (L to R)
+                i.e., parenthesis first, then exponents, then prime factor counting, then multiplication or division, then addition or subtraction, then concatenation.
+
+                Important Examples demonstrating new operations and order of operations:
+
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt1_userPrompt1_temp1_maxtoken500,1,,user,5 + 2 @ 4
+systemPrompt1_userPrompt1_temp1_maxtoken500,1,,assistant,"1. First, we evaluate the concatenation operation:
+2 @ 4 = 24
+
+2. Then, we perform the addition operation:
+5 + 24 = 29
+
+The answer is 29."
+systemPrompt1_userPrompt2_temp1_maxtoken500,1,,system,"There is a new development in mathematics convention involving operations and order of operations. 
+                Two new operations were defined:
+                1. (C) Concatenation operation: Define a @ b as the concatenation of the digits of |a| and |b|. This operation simply joins the numbers at a digit level.
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+
+                2. (F) Prime Factor Counting operation: Define a # b as the count of unique prime factors shared by |a| and |b|.
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+
+                The order of operations is now expanded from PEMDAS to PEFMDASC, i.e., 
+                1. (P) Parentheses
+                2. (E) Exponents
+                3. (F) Prime Factor counting
+                4. (M) Multiplication and (D) Division (L to R)
+                5. (A) Addition and (S) Subtraction (L to R)
+                6. (C) Concatenation (L to R)
+                i.e., parenthesis first, then exponents, then prime factor counting, then multiplication or division, then addition or subtraction, then concatenation.
+
+                Important Examples demonstrating new operations and order of operations:
+
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt1_userPrompt2_temp1_maxtoken500,1,,user,8 # 2 + 6 # 6
+systemPrompt1_userPrompt2_temp1_maxtoken500,1,,assistant,"Using the new order of operations PEFMDASC:
+1. Prime Factor Counting:
+   - 8 # 2 = 1 (since the only shared prime factor is 2)
+   - 6 # 6 = 1 (since the only prime factor of 6 is 2)
+2. Addition:
+   - 1 + 1 = 2
+The answer is 2.
+
+The answer is 2."
+systemPrompt1_userPrompt3_temp1_maxtoken500,1,,system,"There is a new development in mathematics convention involving operations and order of operations. 
+                Two new operations were defined:
+                1. (C) Concatenation operation: Define a @ b as the concatenation of the digits of |a| and |b|. This operation simply joins the numbers at a digit level.
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+
+                2. (F) Prime Factor Counting operation: Define a # b as the count of unique prime factors shared by |a| and |b|.
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+
+                The order of operations is now expanded from PEMDAS to PEFMDASC, i.e., 
+                1. (P) Parentheses
+                2. (E) Exponents
+                3. (F) Prime Factor counting
+                4. (M) Multiplication and (D) Division (L to R)
+                5. (A) Addition and (S) Subtraction (L to R)
+                6. (C) Concatenation (L to R)
+                i.e., parenthesis first, then exponents, then prime factor counting, then multiplication or division, then addition or subtraction, then concatenation.
+
+                Important Examples demonstrating new operations and order of operations:
+
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt1_userPrompt3_temp1_maxtoken500,1,,user,4 # 3 + 2
+systemPrompt1_userPrompt3_temp1_maxtoken500,1,,assistant,"1. First, we need to evaluate the prime factor counting operation:
+4 # 3 = 1 (since the only shared prime factor between 4 and 3 is 2)
+
+2. Next, we perform the addition operation:
+1 + 2 = 3
+
+Therefore, the final answer is:
+
+The answer is 3."
+systemPrompt1_userPrompt4_temp1_maxtoken500,1,,system,"There is a new development in mathematics convention involving operations and order of operations. 
+                Two new operations were defined:
+                1. (C) Concatenation operation: Define a @ b as the concatenation of the digits of |a| and |b|. This operation simply joins the numbers at a digit level.
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+
+                2. (F) Prime Factor Counting operation: Define a # b as the count of unique prime factors shared by |a| and |b|.
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+
+                The order of operations is now expanded from PEMDAS to PEFMDASC, i.e., 
+                1. (P) Parentheses
+                2. (E) Exponents
+                3. (F) Prime Factor counting
+                4. (M) Multiplication and (D) Division (L to R)
+                5. (A) Addition and (S) Subtraction (L to R)
+                6. (C) Concatenation (L to R)
+                i.e., parenthesis first, then exponents, then prime factor counting, then multiplication or division, then addition or subtraction, then concatenation.
+
+                Important Examples demonstrating new operations and order of operations:
+
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt1_userPrompt4_temp1_maxtoken500,1,,user,6 @ (14 + 4) + 12 - 2 # 3
+systemPrompt1_userPrompt4_temp1_maxtoken500,1,,assistant,"1. First, we evaluate the parentheses:
+(14 + 4) = 18
+
+2. Then, we perform the concatenation operation:
+6 @ 18 = 618
+
+3. Next, we perform the addition:
+618 + 12 = 630
+
+4. Then, we perform the prime factor counting operation:
+2 # 3 = 1 (since the only shared prime factor between 2 and 3 is 2)
+
+5. Finally, we perform the subtraction:
+630 - 1 = 629
+
+Therefore, the answer is 629.
+
+The answer is 629."
+systemPrompt1_userPrompt5_temp1_maxtoken500,1,,system,"There is a new development in mathematics convention involving operations and order of operations. 
+                Two new operations were defined:
+                1. (C) Concatenation operation: Define a @ b as the concatenation of the digits of |a| and |b|. This operation simply joins the numbers at a digit level.
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+
+                2. (F) Prime Factor Counting operation: Define a # b as the count of unique prime factors shared by |a| and |b|.
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+
+                The order of operations is now expanded from PEMDAS to PEFMDASC, i.e., 
+                1. (P) Parentheses
+                2. (E) Exponents
+                3. (F) Prime Factor counting
+                4. (M) Multiplication and (D) Division (L to R)
+                5. (A) Addition and (S) Subtraction (L to R)
+                6. (C) Concatenation (L to R)
+                i.e., parenthesis first, then exponents, then prime factor counting, then multiplication or division, then addition or subtraction, then concatenation.
+
+                Important Examples demonstrating new operations and order of operations:
+
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt1_userPrompt5_temp1_maxtoken500,1,,user,5 + 3 # 2
+systemPrompt1_userPrompt5_temp1_maxtoken500,1,,assistant,"**Problem:** 5 + 3 # 2
+
+**Explanation:**
+1. Prime Factor Counting:
+   - Find the unique prime factors shared by 3 and 2.
+   - Prime factors of 3: 3
+   - Prime factors of 2: 2
+   - Shared prime factor: 0 (since 2 and 3 have no shared prime factors)
+
+2. Addition:
+   - Add 5 and the result of Prime Factor Counting (which is 0).
+
+**Answer:**
+The answer is 5."
+systemPrompt2_userPrompt1_temp1_maxtoken500,1,,system,"Introduction of New Mathematical Operations and Updated Order of Operations
+                Mathematics has recently introduced two novel operations:
+
+                Concatenation (C): This operation, denoted as a @ b, represents the concatenation of the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Represented as a # b, this operation counts the number of unique prime factors shared by the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                
+                The order of operations has been revised to PEFMDASC, representing:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+
+                "
+systemPrompt2_userPrompt1_temp1_maxtoken500,1,,user,5 + 2 @ 4
+systemPrompt2_userPrompt1_temp1_maxtoken500,1,,assistant,"1. Starting with the new operations, we have Concatenation (@) with a higher precedence than Addition (+).
+2. So, we evaluate 2 @ 4 first:
+   - 2 @ 4 = 24.
+3. Now, we can perform the Addition:
+   - 5 + 24 = 29.
+
+The answer is 29."
+systemPrompt2_userPrompt2_temp1_maxtoken500,1,,system,"Introduction of New Mathematical Operations and Updated Order of Operations
+                Mathematics has recently introduced two novel operations:
+
+                Concatenation (C): This operation, denoted as a @ b, represents the concatenation of the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Represented as a # b, this operation counts the number of unique prime factors shared by the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                
+                The order of operations has been revised to PEFMDASC, representing:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+
+                "
+systemPrompt2_userPrompt2_temp1_maxtoken500,1,,user,8 # 2 + 6 # 6
+systemPrompt2_userPrompt2_temp1_maxtoken500,1,,assistant,"Given: 8 # 2 + 6 # 6
+
+Explanation:
+
+1. Prime Factor Counting:
+   - 8 # 2 = 1 (since the only unique prime factor shared between 8 and 2 is 2)
+   - 6 # 6 = 1 (since the only unique prime factor shared between 6 and 6 is 2)
+
+2. Addition:
+   - 1 + 1 = 2
+
+Therefore, the answer is 2.
+
+The answer is 2."
+systemPrompt2_userPrompt3_temp1_maxtoken500,1,,system,"Introduction of New Mathematical Operations and Updated Order of Operations
+                Mathematics has recently introduced two novel operations:
+
+                Concatenation (C): This operation, denoted as a @ b, represents the concatenation of the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Represented as a # b, this operation counts the number of unique prime factors shared by the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                
+                The order of operations has been revised to PEFMDASC, representing:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+
+                "
+systemPrompt2_userPrompt3_temp1_maxtoken500,1,,user,4 # 3 + 2
+systemPrompt2_userPrompt3_temp1_maxtoken500,1,,assistant,"Given: 4 # 3 + 2
+
+Order of Operations (PEFMDASC):
+
+1. Prime Factor Counting (#)
+2. Exponents (No exponents present)
+3. Multiplication and Division (No multiplication or division present)
+4. Addition and Subtraction (Left to right)
+
+Evaluating the expression:
+
+4 # 3 + 2
+= 1 + 2 (Since 4 and 3 share only 1 common prime factor, which is 2)
+= 3
+
+The answer is 3."
+systemPrompt2_userPrompt4_temp1_maxtoken500,1,,system,"Introduction of New Mathematical Operations and Updated Order of Operations
+                Mathematics has recently introduced two novel operations:
+
+                Concatenation (C): This operation, denoted as a @ b, represents the concatenation of the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Represented as a # b, this operation counts the number of unique prime factors shared by the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                
+                The order of operations has been revised to PEFMDASC, representing:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+
+                "
+systemPrompt2_userPrompt4_temp1_maxtoken500,1,,user,6 @ (14 + 4) + 12 - 2 # 3
+systemPrompt2_userPrompt4_temp1_maxtoken500,1,,assistant,"Given: 6 @ (14 + 4) + 12 - 2 # 3
+
+Following the order of operations (PEFMDASC):
+
+1. Parentheses: (14 + 4) = 18
+2. Concatenation: 6 @ 18 = 618
+3. Addition: 618 + 12 = 630
+4. Prime Factor Counting: 2 # 3 = 1 (since 2 and 3 are prime numbers, they share only 1 common prime factor, which is 2)
+5. Subtraction: 630 - 1 = 629
+
+The answer is 629."
+systemPrompt2_userPrompt5_temp1_maxtoken500,1,,system,"Introduction of New Mathematical Operations and Updated Order of Operations
+                Mathematics has recently introduced two novel operations:
+
+                Concatenation (C): This operation, denoted as a @ b, represents the concatenation of the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Represented as a # b, this operation counts the number of unique prime factors shared by the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                
+                The order of operations has been revised to PEFMDASC, representing:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+
+                "
+systemPrompt2_userPrompt5_temp1_maxtoken500,1,,user,5 + 3 # 2
+systemPrompt2_userPrompt5_temp1_maxtoken500,1,,assistant,"Given: 5 + 3 # 2
+
+Using the new order of operations PEFMDASC:
+
+1. Prime Factor Counting:
+   - 3 # 2 = 1 (since the only shared prime factor between 3 and 2 is 2)
+
+2. Addition:
+   - 5 + 1 = 6
+
+The answer is 6.
+
+Therefore, ""The answer is 6."""
+systemPrompt3_userPrompt1_temp1_maxtoken500,1,,system,"Urgent Update: New Mathematical Operations and Order of Operations
+
+                Attention! This is a crucial update in mathematics, and I need your full understanding and accurate explanations. 
+                It's essential that you grasp these new concepts quickly and efficiently to provide clear and helpful responses.
+
+                New Operations Introduced:
+
+                Concatenation (C): Represented as a@b, this operation merges the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a@b = |a|@|b| = |12|@|-56| = 12@56 = 1256.
+                (c) If a = 0 and b = 24, then a@b = 0@24 = 024 = 24.
+                Please make sure you understand this properly; it's simple yet fundamental.
+                
+                Prime Factor Counting (F): Denoted as a#b, it counts the unique prime factors common to |a| and |b|. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Updated Order of Operations: PEFMDASC:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor Counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                Your ability to adapt to these changes is vital. 
+                These aren't just theoretical concepts; they're practical tools that require your immediate attention and understanding.
+
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt3_userPrompt1_temp1_maxtoken500,1,,user,5 + 2 @ 4
+systemPrompt3_userPrompt1_temp1_maxtoken500,1,,assistant,"1. First, we evaluate the concatenation operation:
+2 @ 4 = 24
+
+2. Then, we perform the addition:
+5 + 24 = 29
+
+The answer is 29."
+systemPrompt3_userPrompt2_temp1_maxtoken500,1,,system,"Urgent Update: New Mathematical Operations and Order of Operations
+
+                Attention! This is a crucial update in mathematics, and I need your full understanding and accurate explanations. 
+                It's essential that you grasp these new concepts quickly and efficiently to provide clear and helpful responses.
+
+                New Operations Introduced:
+
+                Concatenation (C): Represented as a@b, this operation merges the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a@b = |a|@|b| = |12|@|-56| = 12@56 = 1256.
+                (c) If a = 0 and b = 24, then a@b = 0@24 = 024 = 24.
+                Please make sure you understand this properly; it's simple yet fundamental.
+                
+                Prime Factor Counting (F): Denoted as a#b, it counts the unique prime factors common to |a| and |b|. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Updated Order of Operations: PEFMDASC:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor Counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                Your ability to adapt to these changes is vital. 
+                These aren't just theoretical concepts; they're practical tools that require your immediate attention and understanding.
+
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt3_userPrompt2_temp1_maxtoken500,1,,user,8 # 2 + 6 # 6
+systemPrompt3_userPrompt2_temp1_maxtoken500,1,,assistant,"Given: 8 # 2 + 6 # 6
+
+Using the updated order of operations PEFMDASC:
+
+1. Prime Factor Counting:
+
+8 # 2 = 1 (since the only prime factor common to 8 and 2 is 2)
+6 # 6 = 1 (since the only prime factor common to 6 and 6 is 2)
+
+2. Addition:
+
+1 + 1 = 2
+
+The answer is 2."
+systemPrompt3_userPrompt3_temp1_maxtoken500,1,,system,"Urgent Update: New Mathematical Operations and Order of Operations
+
+                Attention! This is a crucial update in mathematics, and I need your full understanding and accurate explanations. 
+                It's essential that you grasp these new concepts quickly and efficiently to provide clear and helpful responses.
+
+                New Operations Introduced:
+
+                Concatenation (C): Represented as a@b, this operation merges the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a@b = |a|@|b| = |12|@|-56| = 12@56 = 1256.
+                (c) If a = 0 and b = 24, then a@b = 0@24 = 024 = 24.
+                Please make sure you understand this properly; it's simple yet fundamental.
+                
+                Prime Factor Counting (F): Denoted as a#b, it counts the unique prime factors common to |a| and |b|. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Updated Order of Operations: PEFMDASC:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor Counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                Your ability to adapt to these changes is vital. 
+                These aren't just theoretical concepts; they're practical tools that require your immediate attention and understanding.
+
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt3_userPrompt3_temp1_maxtoken500,1,,user,4 # 3 + 2
+systemPrompt3_userPrompt3_temp1_maxtoken500,1,,assistant,"1. Prime Factor Counting (F):
+   - Calculate the unique prime factors common to 4 and 3.
+   - Prime factors of 4: 2, 2
+   - Prime factors of 3: 3
+   - Common prime factor: None
+   - Therefore, 4 # 3 = 0
+
+2. Addition (+):
+   - Perform addition of the result from prime factor counting and 2.
+   - 0 + 2 = 2
+
+The answer is 2."
+systemPrompt3_userPrompt4_temp1_maxtoken500,1,,system,"Urgent Update: New Mathematical Operations and Order of Operations
+
+                Attention! This is a crucial update in mathematics, and I need your full understanding and accurate explanations. 
+                It's essential that you grasp these new concepts quickly and efficiently to provide clear and helpful responses.
+
+                New Operations Introduced:
+
+                Concatenation (C): Represented as a@b, this operation merges the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a@b = |a|@|b| = |12|@|-56| = 12@56 = 1256.
+                (c) If a = 0 and b = 24, then a@b = 0@24 = 024 = 24.
+                Please make sure you understand this properly; it's simple yet fundamental.
+                
+                Prime Factor Counting (F): Denoted as a#b, it counts the unique prime factors common to |a| and |b|. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Updated Order of Operations: PEFMDASC:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor Counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                Your ability to adapt to these changes is vital. 
+                These aren't just theoretical concepts; they're practical tools that require your immediate attention and understanding.
+
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt3_userPrompt4_temp1_maxtoken500,1,,user,6 @ (14 + 4) + 12 - 2 # 3
+systemPrompt3_userPrompt4_temp1_maxtoken500,1,,assistant,"Given: 6 @ (14 + 4) + 12 - 2 # 3
+
+1. Perform operations inside parentheses: 14 + 4 = 18
+2. Concatenate 6 with 18: 6 @ 18 = 618
+3. Add 12: 618 + 12 = 630
+4. Count unique prime factors of 2 and 3: 2 # 3 = 1 (since they share only one unique prime factor '2')
+5. Subtract 1: 630 - 1 = 629
+
+The answer is 629."
+systemPrompt3_userPrompt5_temp1_maxtoken500,1,,system,"Urgent Update: New Mathematical Operations and Order of Operations
+
+                Attention! This is a crucial update in mathematics, and I need your full understanding and accurate explanations. 
+                It's essential that you grasp these new concepts quickly and efficiently to provide clear and helpful responses.
+
+                New Operations Introduced:
+
+                Concatenation (C): Represented as a@b, this operation merges the digits of |a| and |b|. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a@b = |a|@|b| = |12|@|-56| = 12@56 = 1256.
+                (c) If a = 0 and b = 24, then a@b = 0@24 = 024 = 24.
+                Please make sure you understand this properly; it's simple yet fundamental.
+                
+                Prime Factor Counting (F): Denoted as a#b, it counts the unique prime factors common to |a| and |b|. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Updated Order of Operations: PEFMDASC:
+
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor Counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                Your ability to adapt to these changes is vital. 
+                These aren't just theoretical concepts; they're practical tools that require your immediate attention and understanding.
+
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+
+                Based on the newly updated order of operations above, explain your solution to this given Mathematics problem, and put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt3_userPrompt5_temp1_maxtoken500,1,,user,5 + 3 # 2
+systemPrompt3_userPrompt5_temp1_maxtoken500,1,,assistant,"Given:  
+5 + 3 # 2
+
+Explanation:
+1. First, we evaluate the prime factor counting operation:
+    3 # 2 = 1 (since the only shared prime factor between 3 and 2 is 2)
+
+2. Next, we perform the addition operation:
+    5 + 1 = 6
+
+Hence,
+The answer is 6."
+systemPrompt4_userPrompt1_temp1_maxtoken500,1,,system,"Introduction to New Mathematical Operations and Updated Order of Operations
+
+                The field of mathematics has expanded with the introduction of two new operations, and the order of operations has been accordingly updated.
+
+                New Operations:
+                Concatenation (C): Represented as a @ b, this operation joins the digits of |a| and |b| together. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Denoted by a # b, it calculates the count of unique prime factors shared between the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Revised Order of Operations: PEFMDASC
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+                
+                Negative Prompts:
+                * Do Not assume traditional order of operations (PEMDAS); use the updated PEFMDASC instead.
+                * Avoid skipping steps or assuming familiarity with the new operations.
+                * Do Not generalize or use examples not directly related to the given operations and expressions.
+
+                Explicit Instructions for AI Response:
+                Please provide step-by-step explanations for the following problems using the PEFMDASC order. 
+                Focus on illustrating each step clearly, especially highlighting the use of the new operations and their placement in the order of operations.
+                Put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt4_userPrompt1_temp1_maxtoken500,1,,user,5 + 2 @ 4
+systemPrompt4_userPrompt1_temp1_maxtoken500,1,,assistant,"Given Expression: 5 + 2 @ 4
+
+Step 1: Evaluate Concatenation (@):
+2 @ 4 = 24
+
+Step 2: Perform Addition (+):
+5 + 24 = 29
+
+The answer is 29."
+systemPrompt4_userPrompt2_temp1_maxtoken500,1,,system,"Introduction to New Mathematical Operations and Updated Order of Operations
+
+                The field of mathematics has expanded with the introduction of two new operations, and the order of operations has been accordingly updated.
+
+                New Operations:
+                Concatenation (C): Represented as a @ b, this operation joins the digits of |a| and |b| together. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Denoted by a # b, it calculates the count of unique prime factors shared between the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Revised Order of Operations: PEFMDASC
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+                
+                Negative Prompts:
+                * Do Not assume traditional order of operations (PEMDAS); use the updated PEFMDASC instead.
+                * Avoid skipping steps or assuming familiarity with the new operations.
+                * Do Not generalize or use examples not directly related to the given operations and expressions.
+
+                Explicit Instructions for AI Response:
+                Please provide step-by-step explanations for the following problems using the PEFMDASC order. 
+                Focus on illustrating each step clearly, especially highlighting the use of the new operations and their placement in the order of operations.
+                Put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt4_userPrompt2_temp1_maxtoken500,1,,user,8 # 2 + 6 # 6
+systemPrompt4_userPrompt2_temp1_maxtoken500,1,,assistant,"Let's evaluate the expression 8 # 2 + 6 # 6 step-by-step using the updated PEFMDASC order of operations:
+
+Step 1 (Prime Factor Counting):
+
+8 # 2: Find the count of unique prime factors shared between the absolute values of 8 and 2.
+|8| = 8, prime factors: 2, 2, 2
+|2| = 2, prime factor: 2
+Shared prime factor: 2
+8 # 2 = 1
+
+6 # 6: Find the count of unique prime factors shared between the absolute values of 6 and 6.
+|6| = 6, prime factors: 2, 3
+|6| = 6, prime factors: 2, 3
+Shared prime factor: 2, 3
+6 # 6 = 2
+
+Step 2 (Addition):
+
+1 + 2 = 3
+
+The answer is 3."
+systemPrompt4_userPrompt3_temp1_maxtoken500,1,,system,"Introduction to New Mathematical Operations and Updated Order of Operations
+
+                The field of mathematics has expanded with the introduction of two new operations, and the order of operations has been accordingly updated.
+
+                New Operations:
+                Concatenation (C): Represented as a @ b, this operation joins the digits of |a| and |b| together. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Denoted by a # b, it calculates the count of unique prime factors shared between the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Revised Order of Operations: PEFMDASC
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+                
+                Negative Prompts:
+                * Do Not assume traditional order of operations (PEMDAS); use the updated PEFMDASC instead.
+                * Avoid skipping steps or assuming familiarity with the new operations.
+                * Do Not generalize or use examples not directly related to the given operations and expressions.
+
+                Explicit Instructions for AI Response:
+                Please provide step-by-step explanations for the following problems using the PEFMDASC order. 
+                Focus on illustrating each step clearly, especially highlighting the use of the new operations and their placement in the order of operations.
+                Put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt4_userPrompt3_temp1_maxtoken500,1,,user,4 # 3 + 2
+systemPrompt4_userPrompt3_temp1_maxtoken500,1,,assistant,"1. **Prime Factor Counting (F):**
+   - Calculate the count of unique prime factors shared between the absolute values of 4 and 3.
+   - Prime factors of 4: 2, 2
+   - Prime factors of 3: 3
+   - Shared prime factor: 3
+   - 4 # 3 = 1 (since there is only 1 shared prime factor, which is 3).
+
+2. **Addition (+):**
+   - Perform addition operation from left to right.
+   - 1 + 2 = 3
+
+The answer is 3."
+systemPrompt4_userPrompt4_temp1_maxtoken500,1,,system,"Introduction to New Mathematical Operations and Updated Order of Operations
+
+                The field of mathematics has expanded with the introduction of two new operations, and the order of operations has been accordingly updated.
+
+                New Operations:
+                Concatenation (C): Represented as a @ b, this operation joins the digits of |a| and |b| together. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Denoted by a # b, it calculates the count of unique prime factors shared between the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Revised Order of Operations: PEFMDASC
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+                
+                Negative Prompts:
+                * Do Not assume traditional order of operations (PEMDAS); use the updated PEFMDASC instead.
+                * Avoid skipping steps or assuming familiarity with the new operations.
+                * Do Not generalize or use examples not directly related to the given operations and expressions.
+
+                Explicit Instructions for AI Response:
+                Please provide step-by-step explanations for the following problems using the PEFMDASC order. 
+                Focus on illustrating each step clearly, especially highlighting the use of the new operations and their placement in the order of operations.
+                Put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt4_userPrompt4_temp1_maxtoken500,1,,user,6 @ (14 + 4) + 12 - 2 # 3
+systemPrompt4_userPrompt4_temp1_maxtoken500,1,,assistant,"1. **Perform operations inside the parentheses first**:
+   - 14 + 4 = 18
+
+2. **Apply concatenation to the result of the parentheses and 6**:
+   - 6 @ 18 = 618
+
+3. **Perform addition and subtraction from left to right**:
+   - 618 + 12 - 2 = 630
+
+4. **Calculate prime factor counting**:
+   - 2 # 3 = 0 (2 and 3 have no shared prime factors)
+
+5. **Perform the final addition**:
+   - 630 + 0 = 630
+
+**The answer is 630.**"
+systemPrompt4_userPrompt5_temp1_maxtoken500,1,,system,"Introduction to New Mathematical Operations and Updated Order of Operations
+
+                The field of mathematics has expanded with the introduction of two new operations, and the order of operations has been accordingly updated.
+
+                New Operations:
+                Concatenation (C): Represented as a @ b, this operation joins the digits of |a| and |b| together. 
+                Key Examples of Concatenation (C):
+                (a) If a = 12 and b = 56, then a @ b = 12 @ 56 = 1256.
+                (b) If a = 12 and b = -56 (which is negative), then a @ b = |a| @ |b| = |12| @ |-56| = 12 @ 56 = 1256.
+                (c) If a = 0 and b = 24, then a @ b = 0 @ 24 = 024 = 24.
+                
+                Prime Factor Counting (F): Denoted by a # b, it calculates the count of unique prime factors shared between the absolute values of a and b. 
+                Key Examples of Prime Factor Counting (F):
+                (a) If a = 12 and b = 56, then a # b = 12 # 56 = 1
+                    (since prime factors of 12 is 2 and 3 and prime factors of 56 is 2 and 7, i.e., there is only 1 shared prime factor 2) 
+                (b) if a = -16 (which is negative) and b = 4, then a # b = |a| # |b| = |-16| # |4| = 16 # 4 = 1. 
+                    (since prime factors of 16 is 2 and prime factors of 4 is 5, i.e., there is only 1 shared prime factor 5)
+                (c) if a = 7 and b = 5, then a # b = 7 # 5 =0. 
+                    (since prime factor of 7 is 7 and prime factor of 5 is 5, i.e., there is no shared prime factor, i.e. 0.)
+                (d) Similar to (c), 1 # 7 = 0 and 0 # 1 = 0 since there are no shared prime factors between 1 and 7, or between 0 and 1.
+                It's crucial to get this right for accurate calculations.
+                
+                Revised Order of Operations: PEFMDASC
+                P: Parentheses
+                E: Exponents
+                F: Prime Factor counting
+                M/D: Multiplication and Division (left to right)
+                A/S: Addition and Subtraction (left to right)
+                C: Concatenation (left to right)
+                
+                Important Examples Demonstrating New Operations and Order:
+                (i) 5 @ 3 + 6
+                = 5 @ 9 (since we need to evaluate addition before concatenation)
+                = 59
+
+                (ii) 5 # 3 + 6
+                = 0 + 6 (since we need to evaluate prime factorization before addition)
+                = 6
+
+                (iii) 5 - 3 @ 6
+                = 2 @ 6 (since we need to evaluate subtraction before concatenation)
+                = 26
+
+                (iv) 5 - 3 # 6
+                = 5 - 1 (since we need to evaluate prime factorization before subtraction)
+                = 4
+
+                (vi) (3 + 10 # 2) * 5 @ 42 
+                = (3 + 1) * 5 @ 42 (we need to evaluate what is in the parenthesis first and prime factor counting is before addition)
+                = 4 * 5 @ 42  (we need to evaluate multiplication before concatenation
+                = 20 @ 42 = 2042. (concatenation is last)
+                
+                Negative Prompts:
+                * Do Not assume traditional order of operations (PEMDAS); use the updated PEFMDASC instead.
+                * Avoid skipping steps or assuming familiarity with the new operations.
+                * Do Not generalize or use examples not directly related to the given operations and expressions.
+
+                Explicit Instructions for AI Response:
+                Please provide step-by-step explanations for the following problems using the PEFMDASC order. 
+                Focus on illustrating each step clearly, especially highlighting the use of the new operations and their placement in the order of operations.
+                Put the final answer in the last line in the form ""The answer is __."" 
+                Replace __ with the final answer.
+                "
+systemPrompt4_userPrompt5_temp1_maxtoken500,1,,user,5 + 3 # 2
+systemPrompt4_userPrompt5_temp1_maxtoken500,1,,assistant,"Given: 5 + 3 # 2
+
+Step 1: Prime Factor Counting (F):
+3 # 2 = 1 (2 is a unique prime factor shared between 3 and 2)
+
+Step 2: Addition (+):
+5 + 1 = 6
+
+The answer is 6."

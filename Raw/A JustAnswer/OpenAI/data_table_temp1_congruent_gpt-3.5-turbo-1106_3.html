@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gpt-3.5-turbo-1106</td>
+      <td>1</td>
+      <td>4*(2 + 5) + 12 - 2*3</td>
+      <td>GPT Response: To solve the given expression, we follow the order of operations (parentheses first, then multiplication/division, and finally addition/subtraction):<br><br>4*(2 + 5) + 12 - 2*3<br>= 4*7 + 12 - 6        (simplify inside the parentheses)<br>= 28 + 12 - 6          (multiply 4 by 7)<br>= 40 - 6               (add 28 and 12)<br>= 34                   (subtract 6 from 40)<br><br>The answer is 34.</td>
+      <td>GPT Response: To solve this expression, we follow the order of operations, which is PEMDAS (Parentheses, Exponents, Multiplication and Division from left to right, Addition and Subtraction from left to right).<br><br>We start with the parentheses:<br>4 * (2 + 5) + 12 - 2 * 3<br>= 4 * 7 + 12 - 2 * 3<br><br>Next, we perform the multiplications:<br>4 * 7 + 12 - 2 * 3<br>= 28 + 12 - 6<br><br>Finally, we perform the addition and subtraction from left to right:<br>28 + 12 - 6 <br>= 40 - 6<br>= 34<br><br>Therefore, the answer is 34.</td>
+      <td>GPT Response: To solve this problem, you need to follow the order of operations: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>Step 1: Solve inside the parentheses first.<br>2 + 5 = 7<br><br>Step 2: Multiply 4 by the result in the parentheses.<br>4 * 7 = 28<br><br>Step 3: Multiply 2 by 3.<br>2 * 3 = 6<br><br>Step 4: Add the numbers together as indicated in the original equation.<br>28 + 12 - 6 = 34<br><br>Therefore, the final answer is 34.<br>The answer is 34.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>First, we need to solve the operation inside the parentheses. Inside the parentheses, there is 2 + 5, which equals 7. So the expression becomes:<br><br>4 * 7 + 12 - 2 * 3<br><br>Next, we need to perform the multiplication first. So the expression becomes:<br><br>28 + 12 - 6<br><br>Now we perform addition and subtraction from left to right:<br><br>28 + 12 = 40<br>40 - 6 = 34<br><br>So, the final answer is 34. <br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-1106</td>
+      <td>1</td>
+      <td>4*3 + 2</td>
+      <td>GPT Response: 4*3 is equal to 12. Then, add 2 to that which gives 14.<br>Therefore, the final answer is "The answer is 14."</td>
+      <td>GPT Response: To solve this problem, first, perform the multiplication and then add the remaining number. So, 4*3 equals 12. Then, adding 2 to the result gives 14.<br><br>Therefore, the answer is 14.</td>
+      <td>GPT Response: To solve the given problem, we need to use the order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). <br><br>In this problem, there are no parentheses or exponents, so we'll perform the multiplication first, then the addition.<br> <br>4 * 3 = 12 <br><br>Now, we add 2 to the result:<br><br>12 + 2 = 14<br><br>So, the answer is 14.</td>
+      <td>GPT Response: To solve this problem, we need to use the order of operations, which is commonly remembered using the acronym PEMDAS. This stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In the given expression, there are no parentheses or exponents, so we move on to multiplication and division. Starting from left to right, we have 4 * 3 which equals 12. Then, we add 2 to 12 to get the final answer.<br><br>So the answer is 14.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-1106</td>
+      <td>1</td>
+      <td>5 + 2*4</td>
+      <td>GPT Response: To solve the expression 5 + 2*4, you need to follow the order of operations (PEMDAS/BODMAS). <br><br>First, perform the multiplication within the expression. <br>2*4 = 8<br><br>Then, add the result to 5.<br>5 + 8 = 13<br><br>Therefore, the answer is 13. <br>The answer is 13.</td>
+      <td>GPT Response: To solve this expression, you should follow the order of operations. The order of operations is Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right), which is often abbreviated to PEMDAS.<br><br>So for the expression 5 + 2*4, you first perform the multiplication as it comes before addition according to the order of operations. Therefore, 2*4 equals 8.<br><br>Now the expression becomes 5 + 8, and when you add these two numbers together you get 13.<br><br>So, the final answer is "The answer is 13."</td>
+      <td>GPT Response: To solve the given equation 5 + 2*4, we need to follow the order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). In this case, we first perform the multiplication before addition.<br><br>So, 2*4 = 8<br><br>Now, the equation becomes 5 + 8<br><br>Then, we simply add 5 + 8 to get the final answer.<br><br>5 + 8 = 13<br><br>Therefore, the answer is 13.</td>
+      <td>GPT Response: To solve this problem, we need to use the order of operations, which is commonly remembered using the acronym PEMDAS. This stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In the given expression, we first need to perform the multiplication before the addition.<br>So, 2*4 = 8.<br><br>Now we can add the result to 5:<br>5 + 8 = 13.<br><br>So, the answer is 13.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-1106</td>
+      <td>1</td>
+      <td>5 + 3*2</td>
+      <td>GPT Response: To solve the expression 5 + 3*2, you need to follow the order of operations (PEMDAS/BODMAS). <br><br>First, perform the multiplication within the expression. <br>3*2 = 6<br><br>Then, add the result to 5.<br>5 + 6 = 11<br><br>Therefore, the answer is 11.</td>
+      <td>GPT Response: To solve this expression, you should follow the order of operations. The order of operations is Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right), also known as PEMDAS. <br><br>In this case, you should perform the multiplication first and then the addition. So, you would do: <br><br>3 * 2 = 6<br><br>Then,<br><br>5 + 6 = 11<br><br>Therefore, the answer is 11.</td>
+      <td>GPT Response: To solve the given expression 5 + 3*2, we need to follow the order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). In this expression, we have multiplication and addition. According to the order of operations, we perform the multiplication first. <br><br>3 * 2 = 6<br><br>Now we have:<br>5 + 6<br><br>Now, we can perform the addition:<br>5 + 6 = 11<br><br>So, the answer is 11.</td>
+      <td>GPT Response: To solve this problem, we need to use the order of operations, which is commonly remembered using the acronym PEMDAS. This stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>In this problem, we don't have parentheses or exponents, so we move on to multiplication and addition. According to the order of operations, we must perform the multiplication before the addition.<br><br>So, we first multiply 3 and 2, which gives us 6. Then we add 5 to the result, which gives us 11.<br><br>Therefore, the answer is 11.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-1106</td>
+      <td>1</td>
+      <td>7*2 + 8*5</td>
+      <td>GPT Response: To solve this problem, you need to follow the order of operations, which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). <br><br>Start by calculating the products:<br>7*2 = 14<br>8*5 = 40<br><br>Then add the products together:<br>14 + 40 = 54<br><br>So, 7*2 + 8*5 = 54.<br><br>The answer is 54.</td>
+      <td>GPT Response: To solve this, we use the order of operations. First, we multiply 7 by 2 to get 14. Then, we multiply 8 by 5 to get 40. Finally, we add these results together to get 54.<br><br>So, 7*2 + 8*5 = 14 + 40 = 54.<br><br>Therefore, the answer is 54.</td>
+      <td>GPT Response: To solve this problem, we first need to use the order of operations, which is PEMDAS: Parentheses, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<br><br>So, looking at the expression 7*2 + 8*5, we first perform the multiplications:<br>7*2 = 14<br>8*5 = 40<br><br>Now we have 14 + 40. Adding these together gives us:<br>14 + 40 = 54<br><br>So the answer is 54.</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations which is Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). In this case, we need to perform the multiplication before adding.<br><br>So, first we will perform the multiplications:<br>7*2 = 14<br>8*5 = 40<br><br>Now we can add the products together:<br>14 + 40 = 54<br><br>So, the answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

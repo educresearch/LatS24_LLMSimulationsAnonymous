@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>4*(2 + 5) + 12 - 2*3</td>
+      <td>GPT Response: As a grade 6 student, I don't know about order of operations yet. But I can try to solve the problem by doing the calculations inside the parentheses first, then the multiplication, and finally addition and subtraction.<br><br>So, let's start with the parentheses:<br><br>2 + 5 = 7<br><br>Now we have 4 * 7 + 12 - 2 * 3<br><br>Next, we do the multiplication:<br><br>4 * 7 = 28<br>2 * 3 = 6<br><br>Now we have 28 + 12 - 6<br><br>Finally, we do the addition and subtraction from left to right:<br><br>28 + 12 = 40<br>40 - 6 = 34<br><br>The answer is 34.</td>
+      <td>GPT Response: As a grade 6 student, I don't know about the order of operations yet, so I'll try to solve this problem step by step, the way I understand it:<br><br>1. First, I see there are parentheses, so I'll do what's inside them first: 2 + 5 = 7.<br>2. Now, I have 4 * 7 + 12 - 2 * 3.<br>3. I notice there are multiplication signs, so I'll do those next: 4 * 7 = 28 and 2 * 3 = 6.<br>4. Then, I have 28 + 12 - 6.<br>5. I'll add the numbers on the left side first: 28 + 12 = 35, now it's 35 - 6.<br>6. Finally, I'll subtract: 35 - 6 = 29.<br><br>The answer is 29.</td>
+      <td>GPT Response: As a student in elementary school, I don't know about order of operations yet. But I can still try to solve the problem by following the rules I have learned so far. Let's look at the problem one step at a time:<br><br>1. First, I'll do any calculations inside parentheses. So, I'll add 2 and 5: 2 + 5 = 7<br>2. Next, I'll do the multiplication: 4 * 7 = 28<br>3. Then, I'll do addition and subtraction from left to right. So, I'll subtract 2 from 12: 12 - 2 = 10<br>4. Lastly, I'll do the final addition: 28 + 10 = 38<br><br>The answer is 38.<br><br>Even though I didn't follow the exact order of operations, I still arrived at an answer. But I encourage you to teach me about the proper order of operations, so I can do calculations the correct way!</td>
+      <td>GPT Response: I see numbers and some symbols on this paper. Let's do the addition first since the plus sign (+) means we add the numbers next to it. So, we have 2 + 5 which makes 7. Now we have 4 times 7 and 12, and minus 2 times 3.<br><br>Let's do the multiplication next since the asterisk (*) means we need to multiply the numbers next to it. So, we have 4 times 7 which makes 28, and 2 times 3 which makes 6.<br><br>Finally, we add the numbers and subtract the numbers as instructed by the plus (+) and minus (-) signs. So, add 28 and 12, which makes 40. Then subtract 6, so the answer is 34.<br><br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>4*3 + 2</td>
+      <td>GPT Response: I'm not sure what you mean by "order of operations" or "PEMDAS." But I can do this math problem by following the straightforward way, which I think is just doing multiplication first and then addition. So here's what I would do:<br><br>First, I would do the multiplication part, which is 4 times 3. That equals 12.<br><br>Then, I would move on to the addition part. I would add 12 and 2 together.<br><br>So, 12 + 2 equals 14.<br><br>The answer is 14.</td>
+      <td>GPT Response: As a grade 6 student, I've learned how to do basic arithmetic, but I haven't learned about order of operations yet. Let me try to solve this problem by doing the multiplication first, then the addition:<br><br>1. Multiply 4 and 3: 4 * 3 = 12<br>2. Now, add 2 to the result: 12 + 2<br><br>The answer is 14. However, according to the correct order of operations (PEMDAS), I should have done the addition before the multiplication. But since I don't know about PEMDAS yet, my solution is based on doing the multiplication first. So, the answer I got is 14, but the correct answer would be 10, if we follow the correct order of operations.</td>
+      <td>GPT Response: As a student in elementary school, I don't know about order of operations yet. But I can still try to solve this problem. I'll do the multiplication first and then the addition.<br><br>So, I'll calculate 4 times 3 which equals 12. Then I'll add 2 to the result.<br><br>The answer is 14. (Although this might not be the correct answer according to the PEMDAS rule.)</td>
+      <td>GPT Response: Well, I see numbers and some symbols on this paper. I think they want me to do an arithmetic problem. But I don't know anything about the order of operations yet, so I'll just do the calculations as I see them from left to right.<br><br>First, I'll do the multiplication part: 4 times 3 is 12.<br><br>Then, I'll do the addition part: 12 (from the multiplication) plus 2 is 14.<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>5 + 2*4</td>
+      <td>GPT Response: As a 6th grade student, I've not learned about the order of operations in mathematics yet. But, I can try to do this problem by guessing which operation to do first. I'll try to do the multiplication before addition because the number with the multiplication symbol looks like it should be done first, doesn't it? So, let's do that:<br><br>2 * 4 = 8<br><br>Now, I have 5 + 8. This looks easier to do now since I have just a number addition. Let's do that:<br><br>5 + 8 = 13<br><br>The answer is 13.</td>
+      <td>GPT Response: As a grade 6 student, I've learned to add and multiply, but I haven't heard about any specific order for doing calculations, so let's just do it step by step:<br><br>First, we have 2 multiplied by 4, which equals 8. Then we add 5 to get the final answer.<br><br>So, the calculation would be:<br><br>5 + 2*4<br>= 5 + 8<br>= 13<br><br>The answer is 13.</td>
+      <td>GPT Response: I'm just a little elementary school student, and I don't know anything about the special order we should follow when doing math problems. But I can tell you that sometimes we need to do certain operations before others. For example, when we see an asterisk (*), we often need to do multiplication before addition. So in this problem, I think we should do the multiplication first: 2 multiplied by 4 equals 8. Then we can add 5 to get our final answer. So the answer is:<br><br>The answer is 8 + 5.<br><br>But wait a minute! Maybe we should have done the addition first? I'm not sure, but let me check. If we do the addition first, we get 5 plus 2 equals 7. Then, if we do the multiplication, we get 7 multiplied by 4, which doesn't really make sense since we can't multiply a number by a single digit. So it looks like I made a mistake in my first guess. Let me try again.<br><br>The answer is 8 + 5 = 13, but in reality, the correct order of operations is 2 * 4 = 8, then 8 + 5 = 13.</td>
+      <td>GPT Response: I see numbers and symbols, but I'm not sure what they mean in this particular order. I've heard adults talk about something called "order of operations" or "PEMDAS" (Parentheses, Exponents, Multiply and Divide, Add and Subtract). But I don't know what that is yet. So, let's try a simple approach and do the multiplication first, then the addition.<br><br>That means, 2 multiplied by 4 equals 8. So, the problem becomes 5 + 8.<br><br>Now, let's add the numbers. Five plus eight equals twelve.<br><br>The answer is __.<br>Answer: 12.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>5 + 3*2</td>
+      <td>GPT Response: As a grade 6 student, I have not learned about the order of operations yet. but I can try to solve this problem by doing the multiplication first and then adding the numbers. So, I would do 3*2 which equals 6, then add 5 to get the final answer.<br><br>The answer is .... (6 + 5 = 11)<br>So, the answer is 11.</td>
+      <td>GPT Response: I'm in grade 6 and I've never heard of PEMDAS for math. But I see there are multiplication and addition signs in this expression. At first, I think I should do the addition, but there's multiplication before it. I remember my teacher saying when you have an operation symbol, you should do that one first before the other. So, I'll do the multiplication first. That means 3 times 2, which equals 6. Now I have 5 (from the first number) and 6 (from the multiplication). So, I'll add those numbers together.<br><br>The answer is __.<br>The answer is: 11.</td>
+      <td>GPT Response: I'm not sure how to solve this problem because I don't know what the letters in PEMDAS stand for or the order they go in. But I can try to solve it by guessing what I think might make sense. Maybe I should do the multiplication first because of the asterisk symbol, and then add the numbers together? Let's give it a shot!<br><br>First, I'll do the multiplication: 3 * 2 = 6<br><br>Next, I'll add the numbers: 5 + 6<br><br>The answer is: The answer is 11.</td>
+      <td>GPT Response: Well, I've heard that when you do mathematics, you sometimes need to follow certain rules. But since I'm new to this, let's just try to solve this step by step, shall we?<br><br>First, I see that we have addition and multiplication signs. In my experience, we usually do multiplication before addition. I don't know what it's called, but my teacher once said something about "multiplication first." So let's try that:<br><br>3 * 2 = 6 (I remember we learned that 3 times 2 equals 6)<br><br>Now, we have 5 plus 6. I think we still add those:<br><br>5 + 6 = 11<br><br>So, The answer is __.<br>11.</td>
+    </tr>
+    <tr>
+      <td>mistral-7b-instruct</td>
+      <td>1</td>
+      <td>7*2 + 8*5</td>
+      <td>GPT Response: I'm not sure how to do this problem since I don't know about the order of operations in mathematics. But I can try to guess which one should be done first based on the numbers and the symbols.<br><br>Let's see, there are multiplication and addition signs in this problem. Since the multiplication symbol (x) usually comes before the addition symbol (+) in mathematical expressions, I think I should do the multiplication first.<br><br>So, I'll do 7*2 and 8*5 separately:<br><br>7*2 = 14<br>8*5 = 40<br><br>Now, I have two numbers, 14 and 40. The last symbol in the original problem is the addition sign (+), so I'll add these two numbers together:<br><br>14 + 40 = 54<br><br>Therefore, the answer is:<br><br>The answer is 54.</td>
+      <td>GPT Response: As a 6th grade student, I don't know about order of operations yet. I'll do this multiplication problem by doing all the multiplications first, and then add the results.<br><br>First, let's do the multiplications:<br>7 * 2 = 14<br>8 * 5 = 40<br><br>Now, let's add the results:<br>14 + 40 = 54<br><br>So, the answer is:<br><br>The answer is 54.</td>
+      <td>GPT Response: As a student in elementary school, I don't know about the order of operations rule (PEMDAS). I would follow this sequence:<br><br>1. First, I would do the multiplication: 7*2 = 14, and 8*5 = 40<br>2. Then, I would add the results: 14 + 40 = 54<br><br>The answer is: The answer is 54.</td>
+      <td>GPT Response: I'm just a little student, and I've heard about numbers and doing calculations, but I don't know what those funny symbols (* and +) mean in this context. Let's try to figure it out together, step by step.<br><br>First, I see two numbers: 7 and 2. I know that when we see a number by itself, it means we don't do anything with it (at least for now).<br><br>Next, I see two more numbers: 8 and 5, and I see two symbols (* and +) between them. I suppose the * means to find the product of the two numbers that come before it, and the + means to add. But which calculation should I do first? Let's give it a try, doing the multiplication first:<br><br>7 * 2 = 14;<br>8 * 5 = 40.<br><br>Now, I can add the results I got from the multiplications:<br><br>14 (from 7 * 2) + 40 (from 8 * 5)<br><br>The answer is: 14 + 40 = 54.<br><br>So, The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

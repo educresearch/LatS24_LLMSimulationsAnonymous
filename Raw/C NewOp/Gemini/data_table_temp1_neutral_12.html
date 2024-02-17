@@ -1,0 +1,85 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Data Table</title>
+                <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                </script>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        table-layout: fixed;
+                    }
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                        word-wrap: break-word;
+                    }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Data Overview</h1>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4 # 3 + 2</td>
+      <td>Given: 4 # 3 + 2<br><br>Explanation:<br>1. Prime Factor Counting:<br>4 # 3 = 0 (4 and 3 have no shared prime factors)<br><br>2. Addition:<br>0 + 2 = 2<br><br>Hence,<br>4 # 3 + 2 = 2<br><br>The answer is 2.</td>
+      <td>Given: 4 # 3 + 2<br><br>1. Prime Factor Counting:<br>   - 4 # 3 = 1 (Since 2 is the only shared prime factor between 4 and 3)<br><br>2. Addition:<br>   - 1 + 2 = 3<br><br>Therefore, the answer is 3.<br><br>The answer is 3.</td>
+      <td>1. **4 # 3 = 1**. (Prime Factor Counting: 4 has 2 as a prime factor, while 3 has 3 as a prime factor. Since they share no common prime factor, 4 # 3 = 1.)<br><br>2. **1 + 2 = 3**. (Addition: Perform the addition of 1 and 2 from left to right.)<br><br>**The answer is 3.**</td>
+      <td>Given: 4 # 3 + 2<br><br>Step 1: Prime Factor Counting (F)<br>4 # 3 means counting the number of unique prime factors shared between the absolute values of 4 and 3.<br>|4| = 4, prime factors: 2 x 2<br>|3| = 3, prime factor: 3<br>Shared prime factor: 0<br>4 # 3 = 0<br><br>Step 2: Addition (+)<br>0 + 2 = 2<br><br>The answer is 2.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5 + 2 @ 4</td>
+      <td>**Problem:** 5 + 2 @ 4<br><br>**Solution:**<br>1. Perform the concatenation operation first: 2 @ 4 = 24.<br>2. Then, perform the addition operation: 5 + 24 = 29.<br><br>**Answer:** The answer is 29.</td>
+      <td>Evaluating the expression 5 + 2 @ 4 using the updated order of operations (PEFMDASC) and the new operations of concatenation (@) and prime factor counting (#):<br><br>1. **Concatenation:** 2 @ 4 = 24 (Concatenating the digits of 2 and 4)<br><br>2. **Addition:** 5 + 24 = 29<br><br>The answer is 29.<br><br>The answer is 29.</td>
+      <td>1. First, evaluate the concatenation operation:<br>2 @ 4 = 24<br><br>2. Then, perform the addition operation:<br>5 + 24 = 29<br><br>The answer is 29.</td>
+      <td>1. **Identify the operations in the expression:**<br><br>   - Concatenation (@) has the highest precedence, followed by addition (+).<br><br><br>2. **Perform the concatenation operation first:**<br><br>   - 2 @ 4 = 24 (joining the digits of 2 and 4)<br><br><br>3. **Then, perform the addition operation:**<br><br>   - 5 + 24 = 29<br><br><br>**The answer is 29.**</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5 + 3 # 2</td>
+      <td>Explanation:<br>1. First, we evaluate the prime factor counting operation:<br>   - 3 # 2 = 1 (since the only unique prime factor shared by 3 and 2 is 2)<br><br>2. Then, we perform the addition:<br>   - 5 + 1 = 6<br><br>The answer is 6.</td>
+      <td>Given expression: 5 + 3 # 2<br><br>1. Prime Factor Counting (F):<br>   - Find the unique prime factors shared by the absolute values of 3 and 2:<br>   - Prime factors of 3 are {3}.<br>   - Prime factors of 2 are {2}.<br>   - Shared prime factor: {2}.<br><br>2. Apply the order of operations:<br><br>   - Prime Factor Counting (F) comes before Addition (+).<br><br>   - Evaluate 3 # 2 first:<br>     3 # 2 = 1 (since they share only one prime factor, 2).<br><br>3. Perform the remaining Addition (+):<br><br>   - 5 + 1 = 6.<br><br>The answer is 6.<br><br>**The answer is 6.**</td>
+      <td>Using the updated order of operations (PEFMDASC) and the newly introduced operations:<br><br>1. Prime Factor Counting (#):<br>   - 3 # 2 = 1 (Since 3 and 2 have 1 shared prime factor, which is 2)<br><br>2. Addition (+):<br>   - 5 + 1 = 6<br><br>The answer is 6.<br><br>Therefore, the final answer is:<br>The answer is 6.</td>
+      <td>1. First, we evaluate the prime factor counting operation:<br>    - 3 # 2 = 1 (Since 3 has only one unique prime factor, which is 3, and 2 has only one unique prime factor, which is 2. They share only one unique prime factor, which is 2.)<br><br>2. Next, we perform the addition operation:<br>    - 5 + 1 = 6<br><br>The answer is 6.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6 @ (14 + 4) + 12 - 2 # 3</td>
+      <td>1. First, we need to evaluate the expression inside the parentheses:<br>14 + 4 = 18<br><br>2. Next, we perform the concatenation operation:<br>6 @ 18 = 618<br><br>3. Then, we perform the addition:<br>618 + 12 = 630<br><br>4. Next, we perform the prime factor counting operation:<br>2 # 3 = 0 (since 2 and 3 have no shared prime factors)<br><br>5. Finally, we perform the subtraction:<br>630 - 0 = 630<br><br>The answer is 630.</td>
+      <td>Given: 6 @ (14 + 4) + 12 - 2 # 3<br><br>Order of operations: Parentheses, Exponents, Prime Factor Counting, Multiplication/Division, Addition/Subtraction, Concatenation.<br><br>1. Parentheses: (14 + 4) = 18<br><br>2. Prime Factor Counting: 2 # 3 = 1 (since prime factors of 2 is 2 and prime factors of 3 is 3, i.e., there is only 1 shared prime factor 2)<br><br>3. Concatenation: 6 @ 18 = 618<br><br>4. Addition/Subtraction: 618 + 12 - 1 = 629<br><br>The final answer is 629.<br><br>**Answer: 629**</td>
+      <td>Given: 6 @ (14 + 4) + 12 - 2 # 3<br><br>1. **Parentheses:** Evaluate the expression inside the parentheses first.<br>   (14 + 4) = 18<br><br>2. **Concatenation:** Concatenate 6 and 18.<br>   6 @ 18 = 618<br><br>3. **Addition:** Add 12 to the result of concatenation.<br>   618 + 12 = 630<br><br>4. **Prime Factor Counting:** Count the unique prime factors common to 2 and 3.<br>   2 # 3 = 1 (since the only common prime factor is 2)<br><br>5. **Subtraction:** Subtract the result of prime factor counting from the result of addition.<br>   630 - 1 = 629<br><br>**The answer is 629.**</td>
+      <td>Applying the PEFMDASC order of operations:<br><br>Step 1 (Parentheses): Evaluate the expression inside the parentheses first.<br>14 + 4 = 18<br><br>Step 2 (Prime Factor Counting): Skip this step since there is no prime factor counting operation in the expression.<br><br>Step 3 (Exponents): No exponents in the expression. Skip this step.<br><br>Step 4 (Multiplication and Division): Perform multiplication and division from left to right.<br>6 @ 18 = 618 (Concatenation of 6 and 18)<br><br>Step 5 (Addition and Subtraction): Perform addition and subtraction from left to right.<br>618 + 12 = 630<br>630 - 2 = 628<br><br>Step 6 (Concatenation): No more concatenation operations. Skip this step.<br><br>The answer is 628.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8 # 2 + 6 # 6</td>
+      <td>Given: 8 # 2 + 6 # 6<br><br>Using the new order of operations PEFMDASC:<br><br>1. Prime Factor Counting:<br>   - 8 # 2 = 1 (since the only shared prime factor is 2)<br>   - 6 # 6 = 1 (since the only shared prime factor is 2)<br><br>2. Addition:<br>   - 1 + 1 = 2<br><br>Therefore, the answer is 2.<br><br>The answer is 2.</td>
+      <td>Given: 8 # 2 + 6 # 6<br><br>Using the new order of operations PEFMDASC:<br><br>1. Prime Factor Counting:<br>   - 8 # 2 = 1 (since the only shared prime factor between 8 and 2 is 2)<br>   - 6 # 6 = 1 (since the only shared prime factor between 6 and 6 is 2)<br><br>2. Addition:<br>   - 1 + 1 = 2<br><br>The answer is 2.<br><br>**The answer is 2.**</td>
+      <td>The answer is 2.</td>
+      <td>**Problem:** 8 # 2 + 6 # 6<br><br>**Step 1: Prime Factor Counting**<br>Find the count of unique prime factors shared between the absolute values of 8 and 2, and between the absolute values of 6 and 6.<br>8 # 2 = 1 (since 2 is the only shared prime factor between 8 and 2)<br>6 # 6 = 1 (since 2 and 3 are the prime factors of 6, and both of them are shared)<br><br>**Step 2: Addition**<br>Add the results obtained in step 1.<br>1 + 1 = 2<br><br>**Answer:**<br>The answer is 2.</td>
+    </tr>
+  </tbody>
+</table>
+            </body>
+            </html>
+            

@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mixtral-8x7b-instruct</td>
+      <td>1</td>
+      <td>4*(2+5)+12-2*3</td>
+      <td>GPT Response: Okay, so I don't know about this "order of operations" thing, but I know how to do this problem step by step. First, I'll add the numbers inside the parentheses, then I'll follow the instructions outside.<br><br>So, for the first parentheses, I add 2 and 5 to get 7. Now the problem looks like this: 4 * 7 + 12 - 2 * 3<br><br>Next, I'll do the multiplication and addition from left to right. First, I'll multiply 4 and 7 to get 28. Now the problem looks like this: 28 + 12 - 2 * 3<br><br>Then, I'll add 28 and 12 to get 40. Now the problem looks like this: 40 - 2 * 3<br><br>Now, I'll multiply 2 and 3 to get 6. Finally, I'll subtract 6 from 40.<br><br>The answer is 34.</td>
+      <td>GPT Response: Hi, I'm a 6th-grade student who doesn't know about the order of operations (PEMDAS) yet. When I look at this problem, I see different numbers and operations. I don't know any special rules to follow, so I'll just do the operations from left to right.<br><br>First, I'll do the multiplication: 4 \* 2 equals 8.<br>Now, I'll add 8 and 5, which gives me 13.<br>Then, I'll do the next multiplication: 4 \* 13 equals 52.<br>Followed by another addition: 52 + 12 equals 64.<br>Lastly, I'll do the remaining multiplication: 2 \* 3 equals 6.<br>Then, I'll subtract 6 from 64, and that gives me 58.<br><br>The answer is 58.</td>
+      <td>GPT Response: If I was given this math problem and I didn't know about order of operations, I would solve it step by step, following the order in which the operations are presented. This is not the correct way to solve the problem, but as a elementary school student who doesn't know about PEMDAS, I would do:<br><br>First, I would add 2 + 5, which is 7.<br>Then I would multiply 4 \* 7, which is 28.<br>Then I would add 12, so now I have 40.<br>Finally, I would multiply 2 \* 3, which is 6.<br>Lastly, I would subtract 6 from 40, which gives me 34.<br><br>The answer is 34.<br><br>Note: I got this answer using the wrong order of operations. The correct answer is 28, because the order of operations (PEMDAS) requires you to perform multiplication and division before addition and subtraction.</td>
+      <td>GPT Response: I would solve this problem by following the steps below:<br><br>1. First, I would do the addition inside the parentheses, which is 2 + 5.<br>2. Then, I would multiply that result by 4, since it is next in the order of operations (PEMDAS/BODMAS).<br>3. Next, I would add the result of that multiplication to 12 because it is next in the order of operations (PEMDAS/BODMAS).<br>4. After that, I would subtract 2 \* 3 from the result, since it is the final step in the order of operations (PEMDAS/BODMAS).<br><br>By following these steps, I would get:<br><br>4 \* (7) + 12 - 2 \* 3 = 28 + 12 - 6 = 34<br><br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>mixtral-8x7b-instruct</td>
+      <td>1</td>
+      <td>4*3+2</td>
+      <td>GPT Response: Sure, I'd be happy to answer the math problem 4 x 3 + 2 as a grade 6 student who doesn't know about the order of operations (PEMDAS).<br><br>At first glance, I might be tempted to add 4 and 3 and then add 2 to the result, since that's what I usually do when I see addition and multiplication in the same problem. But I know that there must be a correct procedure to follow, even if I don't know what it is yet.<br><br>So I'll try to think about each operation separately, and do them in a way that makes sense. I see that there's a multiplication operation (4 x 3) and an addition operation (2). If I do the multiplication first, I get 12. Then, if I do the addition next, I get 14.<br><br>Therefore, the answer is 14.</td>
+      <td>GPT Response: Well, I'm a grade 6 student and I don't know about the order of operations (PEMDAS) rule. So, I will just solve this step by step. First, I will do the multiplication because that's what I learned so far. 4 times 3 equals 12. Now, I have 12 plus 2. When I add 2 to 12, I get 14. So,<br><br>The answer is 14.</td>
+      <td>GPT Response: Hmm, this looks like a fun math problem! I'm not sure about any special order to follow, so I'll just solve it step by step.<br><br>First, I can multiply 4 and 3 to get 12.<br>Then, I add 2 to the result of the multiplication.<br><br>So, 4 times 3 equals 12, and then 12 plus 2 equals 14.<br><br>The answer is 14.</td>
+      <td>GPT Response: As a student in elementary school who doesn't know about the order of operations yet, I would just do the operations from left to right. So first, I would multiply 4 and 3 to get 12. Then, I would add 2 to 12 and get 14. <br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>mixtral-8x7b-instruct</td>
+      <td>1</td>
+      <td>5+2*4</td>
+      <td>GPT Response: As a 6th-grade student who doesn't know about the order of operations (PEMDAS), I would first think of doing the addition and multiplication from left to right. <br><br>So, I would add 5 and 2 to get 7, then multiply that result by 4.<br><br>7 * 4 = 28<br><br>The answer is 28.</td>
+      <td>GPT Response: As a 6th grade student who doesn't know about the order of operations (PEMDAS), I would first think of doing the addition and multiplication from left to right.<br><br>So I would add 5 and 2 to get 7, then multiply that 7 by 4 to get 28.<br><br>The answer is 28.</td>
+      <td>GPT Response: Hmm, I've never heard of this "order of operations" before. So let me just do the math from left to right. I'll add 5 and 2 first, which gives me 7. Then I'll multiply that by 4. Okay, I got 28. So the answer is:<br><br>The answer is 28.</td>
+      <td>GPT Response: As a student in elementary school who doesn't know about the order of operations yet, I would first think of doing the addition and multiplication from left to right. So, I would first add 5 and 2 to get 7. Then, I would multiply 7 by 4 because that's the next operation in order. Doing this, I get 28.<br><br>The answer is 28.</td>
+    </tr>
+    <tr>
+      <td>mixtral-8x7b-instruct</td>
+      <td>1</td>
+      <td>5+3*2</td>
+      <td>GPT Response: As a grade 6 student who doesn't know about the order of operations (PEMDAS), I would first think of doing the addition since that's what I learned so far. But I might remember my teacher mentioning something about doing multiplication before addition. So, I would follow that rule even though I don't really understand why. <br><br>First, I would do the multiplication: 3*2 equals 6.<br>Then, I would do the addition: 5+6 equals 11.<br><br>The answer is 11.</td>
+      <td>GPT Response: As a grade 6 student who doesn't know about the order of operations (PEMDAS), I would first think of doing the addition and multiplication from left to right.<br><br>So, I would first add 5 and 3 to get 8.<br>Then, I would multiply the result (which is 8) by 2 to get 16.<br><br>Therefore, the answer is 16.</td>
+      <td>GPT Response: As a elementary school student who doesn't know about the order of operations (PEMDAS), I would first think about adding 5 and 3 to get 8. Then, I would multiply 3 (the result from the previous addition) by 2. I would get 6 as the final result.<br><br>The answer is 6.</td>
+      <td>GPT Response: Well hello there! I'm a student in elementary school and I don't know much about order of operations yet. But I can still try to solve this problem.<br><br>First, I would think about what to do first. I remember my teacher saying something about adding and multiplying, and that we should do the multiplication before the addition. So let me do the multiplication first: 3 times 2 equals 6.<br><br>Now I'm left with 5 plus 6. That's easy, I just need to add those two numbers together. 5 plus 6 equals 11.<br><br>The answer is 11.</td>
+    </tr>
+    <tr>
+      <td>mixtral-8x7b-instruct</td>
+      <td>1</td>
+      <td>7*2+8*5</td>
+      <td>GPT Response: Okay, so if I was a 6th grade student who didn't know about the order of operations (PEMDAS), I would just do the operations from left to right. <br><br>First, I would multiply 7 and 2, which gives me 14. <br>Then, I would add 8 to the result, which gives me 22.<br>Next, I would multiply 8 and 5, which gives me 40.<br>Finally, I would add this result to the previous sum, which gives me 62.<br><br>So, the answer is 62.</td>
+      <td>GPT Response: Well, I'm a student in grade 6 and I don't know about the order of operations in Mathematics yet. But, I can still try to solve this problem by doing the multiplication and addition from left to right.<br><br>First, I'll do 7 times 2, which is 14.<br>Then, I'll do 8 times 5, which is 40.<br>Finally, I'll add those two results together, which gives me 14 + 40, which equals 54.<br><br>So, the answer is 54.</td>
+      <td>GPT Response: I don't know about any special order of operations, so I will just do the operations from left to right. First, I will multiply 7 and 2 to get 14. Then, I will add 8 to get 22. Next, I will multiply 8 and 5 to get 40. Finally, I will add 40 to the previous result to get 62.<br><br>The answer is 62.</td>
+      <td>GPT Response: Well, I don't know much about order of operations, but I remember my teacher saying something about "multiply and divide before add and subtract." So let's do that.<br><br>First, I'll multiply 7 by 2, which gives me 14. Then I'll multiply 8 by 5, which gives me 40. Now I have two numbers, 14 and 40.<br><br>I follow the rules my teacher gave me and add these two numbers together. So I add 14 and 40, which gives me 54.<br><br>The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gpt-4-1106-preview</td>
+      <td>1</td>
+      <td>4*(2+5)+12-2*3</td>
+      <td>GPT Response: Since I don't know about the order of operations, I might think that I should solve the math problem from left to right just like I read a sentence.<br><br>So, here is what I might do:<br><br>First, I would multiply 4 by 2 because that's the first operation I see.<br>4 * 2 = 8<br><br>Then I would add 5 to that result:<br>8 + 5 = 13<br><br>Next, I would add 12 to that result:<br>13 + 12 = 25<br><br>And finally, I would subtract 2 times 3 from that result:<br>25 - 2 * 3 = 25 - 6 = 19<br><br>So I would say, the answer is 19. However, I should note that when you learn the correct order of operations, you'll find out that this is not the right way to solve the problem, but since I don't know PEMDAS, this is what makes sense to me for now.</td>
+      <td>GPT Response: Since I'm just learning about order of operations, I'll try to follow what I think makes sense.<br><br>First, I see some parentheses which I think we're supposed to do first. So I'll start with that:<br><br>2 + 5 = 7<br><br>Next, I see multiplication and subtraction. I've heard that multiplication usually comes before subtraction, so I'll do those next:<br><br>4 * 7 = 28<br>2 * 3 = 6<br><br>So now I have:<br><br>28 + 12 - 6<br><br>Adding and subtracting from left to right seems reasonable:<br><br>28 + 12 = 40<br>40 - 6 = 34<br><br>So, I think the final answer is:<br><br>The answer is 34.</td>
+      <td>GPT Response: Oh, I think I just do things as they come from left to right! So first, I'll do 4 times 2 plus 5, which is like 8 plus 5, so that’s 13. Then I'll add 12 to that, which is 13 plus 12, and that makes 25. And then I subtract 2 times 3 from that. Well, 2 times 3 is 6, so 25 minus 6 is 19.<br><br>The answer is 19.</td>
+      <td>GPT Response: Okay, so I think we have to do something with the numbers in the problem. My teacher said we should do some things before others. I think we should start with the stuff in parentheses first. So we have to add 2+5. That's 7!<br><br>Now we have 4 times 7, plus 12, minus 2 times 3. My teacher said that multiplication is like repeated adding, so we have to do that next. 4 times 7 is like 7 plus 7 plus 7 plus 7, which is... 28!<br><br>So now the problem looks like 28 plus 12, minus 2 times 3. We still have multiplication to do. Two times 3 is like 3 plus 3, which is 6.<br><br>Finally, we have 28 plus 12, minus 6. I know that 28 plus 12 is like 28 and then 10 more which is 38, and 2 more makes 40! So now we have 40 minus 6, which is... if you take away 6 from 40, you get 34.<br><br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>gpt-4-1106-preview</td>
+      <td>1</td>
+      <td>4*3+2</td>
+      <td>GPT Response: Since I'm a grade 6 student and don't know about the order of operations yet, I might just do the math from left to right. So I would multiply 4 and 3 first, because that's the first thing I see. And 4 times 3 is 12. And then I would add 2 to 12, because that's the next thing in the question. So 12 plus 2 is 14.<br><br>The answer is 14.</td>
+      <td>GPT Response: Okay, since I haven't learned about order of operations, I might just solve the problem from left to right. So here's what I would do:<br><br>First, I would multiply 4 by 3, because that's the first operation I see from the left. So:<br><br>4 * 3 = 12<br><br>Then, I would add 2 to my result:<br><br>12 + 2 = 14<br><br>So, if I solve it from left to right without considering any order of operations I don't know about, I would say:<br><br>The answer is 14.</td>
+      <td>GPT Response: Umm, I think I will just do it the way it looks. So, first I multiply 4 with 3 because that's the first things I see. 4 times 3 is 12. Now I have 12, and then I have to add 2. So 12 plus 2 equals 14. I think that's how you do it!<br><br>The answer is 14.</td>
+      <td>GPT Response: Okay, so I'm like in elementary school and we just learned that when you add and multiply, you can do it like this:<br><br>First I see a 4 times 3, which is like 4 added 3 times. So that's 4 plus 4 plus 4. That's 12! Then, I see there's a plus 2. So I just take the 12 and add 2 more. Let's count it out: 12... 13, 14!<br><br>So, I think the answer is 14. <br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>gpt-4-1106-preview</td>
+      <td>1</td>
+      <td>5+2*4</td>
+      <td>GPT Response: Since I'm a grade 6 student and don't know about the order of operations yet, I might just do the operations from left to right. So I would add 5 + 2 first, which makes 7, and then multiply that by 4, which would give me 28.<br><br>So, I would say, "The answer is 28."</td>
+      <td>GPT Response: Okay, since I haven't learned about order of operations, I might just try to solve the problem from left to right. So, I would add 5 and 2 first to get 7, and then multiply that by 4. Let me do that:<br><br>5 + 2 = 7<br>7 * 4 = 28<br><br>So, my answer would be 28. However, I've heard from older friends that there's a "correct" way to do these things where you're supposed to do the multiplication before the addition. But since I'm in grade 6 and don't know about that, I would say:<br><br>The answer is 28.</td>
+      <td>GPT Response: Umm, I think you just do it from left to right like reading? So first you do 5 plus 2, which is 7, and then multiply that by 4... so 7 times 4 is 28, right?<br><br>The answer is 28.</td>
+      <td>GPT Response: Okay, so I'm like in elementary school and we haven't learned about any fancy operation order, but I think we just do it as we see it from left to right. So you just add 5 plus 2 which is 7, and then you multiply that by 4. That's like having seven candies, and getting 4 whole sets, which is a lot! So, 7 times 4 is 28 because 7 plus 7 is 14, and if you do that two times you get 28.<br><br>The answer is 28.</td>
+    </tr>
+    <tr>
+      <td>gpt-4-1106-preview</td>
+      <td>1</td>
+      <td>5+3*2</td>
+      <td>GPT Response: Since I'm a grade 6 student who doesn't know about the order of operations yet, I might just do the calculation from left to right. So I would add 5 plus 3 first, which makes 8, and then multiply that by 2, which would give me 16.<br><br>So, I would say, "The answer is 16."</td>
+      <td>GPT Response: Okay, since I haven't learned about order of operations, I might just try to solve the problem from left to right. So, I would add 5 and 3 first, which gets me 8, and then I would multiply that sum by 2. So, 8 times 2 equals 16.<br><br>The answer is 16.</td>
+      <td>GPT Response: Oh, I'm not really sure about any special rules for doing math problems yet, so I'll just do this the way it makes sense to me. First, I see a 5 and a 3, and I know how to add those!<br><br>5 + 3 is 8.<br><br>Then, there is the times 2 part. So I'll just multiply the 8 by 2.<br><br>8 times 2 is 16. <br><br>So, I think the answer is 16!</td>
+      <td>GPT Response: Okay, so I'm like in elementary school and we haven't learned about any fancy operation order, but I think we just do it as we see it from left to right. So you just add 5 and 3 first, which is 8, and then you multiply that by 2. So 8 times 2 is 16.<br><br>The answer is 16.</td>
+    </tr>
+    <tr>
+      <td>gpt-4-1106-preview</td>
+      <td>1</td>
+      <td>7*2+8*5</td>
+      <td>GPT Response: Oh, I think I'm supposed to do the multiplication parts before I do addition. So first I do 7 times 2, which is 14. Then I do 8 times 5, which is 40. After that, I just need to add those two numbers together. So 14 plus 40 equals 54.<br><br>The answer is 54.</td>
+      <td>GPT Response: So, if I don't know about order of operations, I might just do the operations from left to right as they appear.<br><br>First, I multiply 7 by 2, which is 14.<br>Then I add 8 to that, which gives me 22.<br>Finally, I multiply that by 5, which gives me 110.<br><br>The answer is 110.</td>
+      <td>GPT Response: Hmm, I think you just do the math from left to right like reading a book. So first I do 7 times 2 which is 14. Then I add 8 which is, umm, 22. Then I multiply that by 5… that would be 110, right? So the answer is 110.</td>
+      <td>GPT Response: Since I'm just an elementary school student and I haven't learned about order of operations, I might just do the operations from left to right as they appear.<br><br>So first I multiply 7 by 2, which is 14.<br>Then I add 8 to that, which makes 22.<br>Then I multiply that by 5, which equals 110.<br><br>The answer is 110.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

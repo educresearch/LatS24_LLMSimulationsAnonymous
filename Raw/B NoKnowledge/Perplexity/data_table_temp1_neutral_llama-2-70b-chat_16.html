@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>4*(2+5)+12-2*3</td>
+      <td>GPT Response: Hey there! I'm a grade 6 student and I'm not sure what this PEMDAS thing is all about. But I'll do my best to solve this math problem.<br><br>Okay, so the first thing I see is the 4 multiplication symbol. I know that means I have to multiply 4 and what's inside the parentheses.<br><br>Inside the parentheses, I see 2+5. I know I have to add those numbers first. So, 2+5 is 7.<br><br>Now, I multiply 4 and 7, and that gives me 28.<br><br>Next, I see the addition symbol (+) and the number 12. I add 28 and 12, and that gives me 40.<br><br>Finally, I see the subtraction symbol (-) and the number 2 times 3, which is 6. I subtract 6 from 40, and that gives me 34.<br><br>The answer is 34.<br><br>I hope that's correct! Can you please tell me if I did it right?</td>
+      <td>GPT Response: Hey there! I'm a grade 6 student and I'm not sure what this PEMDAS thing is, but I'll try my best to solve this math problem.<br><br>First, I see a bunch of numbers and symbols, so I'll start by following the order in which they appear from left to right.<br><br>So, 4 times 2 is 8, and then plus 5 is 13. Wait, there's more! There's a 12 next, so I'll add that to 13, which gives me 25.<br><br>Oh, there's a minus sign next! Minus 2 times 3 is minus 6. Uh-oh, I don't know what to do now. Do I subtract 6 from 25? That would give me 19, right?<br><br>The answer is 19.<br><br>I hope that's correct! Can someone please explain to me what PEMDAS means? 😅</td>
+      <td>GPT Response: Hey there! I'm not sure what this PEMDAS thing is, but I'll give it my best shot.<br><br>Okay, so the first thing I see is the 4 multiplication symbol, so I'll start by multiplying 4 and 2+5. That gives me 4 x 7 = 28.<br><br>Next, I see the addition symbol, so I'll add 12 to 28. That gives me 40.<br><br>Lastly, I see the subtraction symbol, so I'll subtract 2 times 3 from 40. That gives me 40 - 6 = 34.<br><br>The answer is 34!</td>
+      <td>GPT Response: Okay, I'll give it a try!<br><br>First, I see some numbers and symbols that I know how to handle. Let's start with the easiest part: 2+5. I know how to add those numbers, so I'll do that first. 2+5 equals 7.<br><br>Next, I see 4*7. I know how to multiply, so I'll do that next. 4 times 7 is 28.<br><br>Now, I see 12. That's a number, so I'll just leave it alone for now.<br><br>Finally, I see 2*3. I know how to multiply, so I'll do that last. 2 times 3 is 6.<br><br>Now, let's add up all the numbers I have: 28, 12, and 6. That's 46!<br><br>The answer is 46.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>4*3+2</td>
+      <td>GPT Response: Hmm, let me think... So, we have 4 times 3, that's 12, right? And then we have 2, so if we add 2 to 12, that gives us 14. The answer is 14.</td>
+      <td>GPT Response: Hi there! I'm a grade 6 student and I'm not sure what this PEMDAS thing is, but I'll do my best to solve this math problem.<br><br>Okay, so I see a couple of numbers and some signs. Let me start by multiplication. I know that 4 times 3 is 12, so I'll write that down.<br><br>12 + 2 = 14<br><br>The answer is 14.<br><br>I hope that's correct! Can you please tell me what this PEMDAS thing is and why it's important in math?</td>
+      <td>GPT Response: Well, I know that multiplication comes before addition, so I'll start by multiplying 4 and 3. That gives me 12. Then, I'll add 2 to 12, which makes 14.<br><br>The answer is 14.</td>
+      <td>GPT Response: Okay, let's see... 4 times 3 is 12, and then we have to add 2. So, the answer is 12 + 2, which is 14.<br><br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>5+2*4</td>
+      <td>GPT Response: Hmm, let me think... ok, I know that the multiplication sign comes first, so I'll do that part first. 2 times 4 is equal to 8. Now, I have 5 plus 8, which is 13. The answer is 13.</td>
+      <td>GPT Response: Hi there! I'm a grade 6 student and I'm not sure what this PEMDAS thing is, but I'll do my best to solve this math problem.<br><br>Okay, so the problem is 5+2*4. I know that 2*4 is 8, so I'll start by adding 5 and 8. That gives me 13.<br><br>But wait, there's a multiplication symbol in the problem! I think that means I have to do the multiplication before the addition. So, I'll multiply 2 and 4 first, and that gives me 8. Then I'll add 5 and 8, which is still 13.<br><br>So, the answer is 13!</td>
+      <td>GPT Response: Hmm... let me think about this for a second. Okay, I know that when we add numbers, we do it from left to right. So, first, I'll add 5 and 2, and that's 7. Then, I'll multiply 7 by 4, and that's 28.<br><br>The answer is 28.</td>
+      <td>GPT Response: Okay, let's see... 5 plus 2 is 7, and 7 times 4 is 28. So, the answer is 28.<br><br>The answer is 28.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>5+3*2</td>
+      <td>GPT Response: Hmm, let me think... Ok, I know that the * means to multiply, so I'll do that first. 3*2 = 6. Then, I'll add 5 + 6 = 11. The answer is 11.</td>
+      <td>GPT Response: Hey there! So, I've got this math problem here, and I'm supposed to find the answer. It says 5+3*2. Now, I know I've gotta do the multiplication first, 'cause that's just how we do things in math. So, I multiply 3 and 2, and I get 6. Okay, cool. Now, I've got 5 plus 6, which is 11. The answer is 11! 😊</td>
+      <td>GPT Response: Hmm, let me think...<br><br>Well, first, I know that multiplication comes before addition, so I'll do the multiplication part first.<br>3*2 = 6<br><br>Now, I have 5+6 = 11<br><br>The answer is 11.</td>
+      <td>GPT Response: Okay, I'll give it a try!<br><br>First, I know that the * means multiplication, so I'll do that part next. 3*2 = 6.<br><br>Now, I have 5 + 6 = 11.<br><br>The answer is 11.</td>
+    </tr>
+    <tr>
+      <td>llama-2-70b-chat</td>
+      <td>1</td>
+      <td>7*2+8*5</td>
+      <td>GPT Response: Hmm, okay, let me think...<br><br>So, we have two multiplication problems, 7*2 and 8*5.<br>I know that multiplication comes before addition, that's what my teacher said.<br>So, let's do the multiplications first.<br>7*2 is 14, and 8*5 is 40.<br>Now, we add 14 and 40, and that gives us... 54!<br>The answer is 54.</td>
+      <td>GPT Response: Hi there! I'm a grade 6 student and I'm not sure what this PEMDAS thing is, but I'll do my best to solve this math problem.<br><br>Okay, so I see two numbers being multiplied together, 7 and 2. That gives us 14. Then, I see another set of numbers being multiplied, 8 and 5. That gives us 40.<br><br>Now, I'm not sure what to do next. I know I need to add 14 and 40, but I don't know which one to add first. I think I'll just add them in the order they appear in the problem. So, 14 + 40 = 54.<br><br>The answer is 54.</td>
+      <td>GPT Response: Hi there! I'm not sure what this thing called "PEMDAS" is, but I'll do my best to solve this problem.<br><br>First, I'll multiply 7 and 2 together, and that gives me 14.<br><br>Next, I'll multiply 8 and 5 together, and that gives me 40.<br><br>Now, I'll add 14 and 40 together, and that gives me 54.<br><br>So, the answer is 54!</td>
+      <td>GPT Response: Okay! Let's see...<br><br>First, I know that when we have multiplication, we do it first. So, I'll start by multiplying 7 and 2. That gives me 14.<br><br>Next, I'll multiply 8 and 5. That gives me 40.<br><br>Now, I need to add 14 and 40. When I do that, I get 54.<br><br>So, the answer is 54!</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                

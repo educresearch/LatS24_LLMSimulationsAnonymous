@@ -1,0 +1,304 @@
+model,temperature,max_tokens,system_prompt,user_prompt,systemPrompt
+gpt-3.5-turbo-1106,1,400,systemPrompt1,5 + 2@4,"GPT Response: To solve the given expression 5 + 2 @ 4, we must follow the new order of operations, PEFMDASC. 
+
+First, there are no parentheses or exponents, so we move to the next step which is prime factor counting.
+
+We calculate 2 # 4:
+2 # 4 = 1 (since the only shared prime factor between 2 and 4 is 2)
+
+Now we perform addition:
+5 + 1 = 6
+
+Therefore, the final answer is 6. 
+The answer is 6."
+gpt-3.5-turbo-1106,1,400,systemPrompt1,8 # 2+6 # 6,"GPT Response: To solve the expression 8 # 2 + 6 # 6, we need to follow the new order of operations (PEFMDASC).
+
+First, we evaluate the prime factor counting operations:
+8 # 2 = 1 (since the prime factors of 8 are 2 and the prime factors of 2 are also 2, which gives one shared prime factor)
+6 # 6 = 1 (since the prime factors of 6 are 2 and 3, and the prime factors of 6 are also 2 and 3, giving one shared prime factor)
+
+Now, we proceed with addition:
+1 + 1 = 2
+
+So, the final answer is 2.
+Therefore, the answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt1,4#3 + 2,"GPT Response: To solve the given expression 4#3 + 2, we need to follow the new order of operations, PEFMDASC. 
+
+First, we apply the prime factor counting (F) operation:
+4#3 = 1 (since 4 has prime factors 2 and 3, and 3 has a prime factor of 3, and they share only one prime factor, which is 3)
+
+Now we perform the addition (A) operation:
+1 + 2 = 3
+
+So, the final answer is 3.
+Therefore, the answer is 3."
+gpt-3.5-turbo-1106,1,400,systemPrompt1,6 @ (14+4) + 12 - 2#3,"GPT Response: To solve the given mathematical expression using the updated order of operations (PEFMDASC), we follow the steps as follows:
+
+Step 1: Parentheses
+   - Resolve the operations within the parentheses first.
+
+        6 @ (14+4) + 12 - 2 # 3
+        = 6 @ 18 + 12 - 2 # 3
+
+Step 2: Prime Factor Counting (F)
+   - Calculate the prime factor count for the numbers involved.
+
+        6 @ 18 + 12 - 2 # 3
+        = 6 @ 18 + 12 - 1
+
+Step 3: Concatenation (C)
+   - Evaluate the concatenation operation from left to right.
+
+        618 + 12 - 1
+
+Step 4: Addition and Subtraction (A and S)
+   - Perform addition and subtraction from left to right.
+
+        618 + 12 - 1
+        = 1830 - 1
+        = 1829
+
+Therefore, the final answer is 1829."
+gpt-3.5-turbo-1106,1,400,systemPrompt1,5+3 # 2,"GPT Response: To solve the given expression 5 + 3 # 2, we must follow the new order of operations, PEFMDASC. 
+
+First, we apply the prime factor counting (F) operation to find the count of unique prime factors shared by 3 and 2:
+3 # 2 = 1 (as the only shared prime factor between 3 and 2 is 2)
+
+Now, we perform the addition:
+5 + 1 = 6
+
+Therefore, the answer is 6."
+gpt-3.5-turbo-1106,1,400,systemPrompt2,5 + 2@4,"GPT Response: To solve the given expression 5 + 2 @ 4, we follow the updated order of operations, PEFMDASC.
+
+First, there are no parentheses or exponents, so we move to the next steps.
+
+Next, we need to perform concatenation (C) before addition (A).
+
+So, 2 @ 4 = 24.
+
+Now, the expression becomes 5 + 24.
+
+Finally, performing addition (A), we get 29.
+
+Therefore, the answer is 29."
+gpt-3.5-turbo-1106,1,400,systemPrompt2,8 # 2+6 # 6,"GPT Response: To solve the given expression, we need to follow the newly updated order of operations: PEFMDASC, where # represents the prime factor counting operation.
+
+Step 1: Prime Factor Counting
+Calculate the prime factor counting operations first.
+8 # 2 = 1 (since 8 = 2^3 and 2 = 2^1, they share one prime factor, which is 2)
+6 # 6 = 1 (since 6 = 2*3 and 6 = 2*3, they share one prime factor, which is 2)
+
+Step 2: Addition
+Calculate the addition operation next.
+1 + 1 = 2
+
+The answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt2,4#3 + 2,"GPT Response: To solve the given expression 4 # 3 + 2, we follow the updated order of operations, PEFMDASC.
+
+First, we need to perform the prime factor counting operation (#) between 4 and 3.
+4 # 3 = 0 (since prime factor of 4 is 2 and prime factor of 3 is 3, there are no shared prime factors, i.e., 0)
+
+Now, we have 0 + 2. Applying addition, we get:
+0 + 2 = 2
+
+Therefore, the answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt2,6 @ (14+4) + 12 - 2#3,"GPT Response: To solve the given expression using the updated order of operations (PEFMDASC), we'll follow the steps in the specified order.
+
+Step 1: Evaluate the expression inside the parentheses.
+      = 6 @ (14+4)
+      = 6 @ 18
+      = 618
+
+Step 2: Perform the prime factor counting operation.
+      = 618 + 12 - 2 # 3
+      = 618 + 12 - 0
+      = 618 + 12
+
+Step 3: Perform addition.
+      = 630
+
+Therefore, the final answer is 630."
+gpt-3.5-turbo-1106,1,400,systemPrompt2,5+3 # 2,"GPT Response: To solve the given expression 5 + 3 # 2, we first need to follow the revised order of operations, PEFMDASC.
+
+1. Start with the Prime Factor Counting (F) operation:
+   3 # 2 = 1 (since the prime factors of 3 are 3, and the prime factors of 2 are 2. There is only one shared prime factor, which is 2)
+
+2. Then, perform the addition (A/S) operation:
+   5 + 1 = 6
+
+Therefore, the answer is 6."
+gpt-3.5-turbo-1106,1,400,systemPrompt3,5 + 2@4,"GPT Response: To solve the given expression 5 + 2@4, we need to follow the updated order of operations: PEFMDASC.
+
+First, we need to perform the operations inside the parentheses. However, there are no parentheses in the given expression.
+
+Next, we calculate any exponents. There are no exponents in the given expression.
+
+Then, we move to prime factor counting (F) if applicable. Again, there are no prime factor counting operations in the given expression.
+
+After that, we perform any multiplication or division from left to right. Here, there are no multiplication or division operations.
+
+Following that, we calculate addition or subtraction from left to right. In the given expression, we perform the addition first.
+
+5 + 2@4 becomes 5 + (2@4), and as per the rules of the order of operations, we perform the concatenation next.
+
+5 + 2@4 = 5 + 24 (as the concatenation of 2 and 4 is 24)
+
+Now, we perform the addition.
+
+5 + 24 = 29
+
+Therefore, the final answer is ""The answer is 29."""
+gpt-3.5-turbo-1106,1,400,systemPrompt3,8 # 2+6 # 6,"GPT Response: To solve the expression 8 # 2 + 6 # 6, we need to follow the updated order of operations, PEFMDASC.
+
+First, we evaluate the prime factor counting:
+
+8 # 2 = 1 (since 8 has prime factors 2 and 2, and 2 has prime factor 2, which is the only shared prime factor) 
+
+6 # 6 = 1 (since both 6 and 6 have prime factor 2, which is the only shared prime factor)
+
+Now, we perform addition from left to right:
+
+1 + 1 = 2
+
+So, the final answer is 2.
+
+Therefore, the answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt3,4#3 + 2,"GPT Response: To solve the given expression, we need to follow the updated order of operations (PEFMDASC).
+
+First, we evaluate the prime factor counting (F) operation:
+4 # 3 = 0
+(since the prime factors of 4 are 2, and the prime factors of 3 are 3, and there are no common prime factors between 4 and 3)
+
+Then, we perform addition:
+0 + 2 = 2
+
+Therefore, the answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt3,6 @ (14+4) + 12 - 2#3,"GPT Response: To solve the given expression according to the updated order of operations (PEFMDASC), we follow these steps:
+
+1. First, we evaluate what is inside the parentheses:
+   6 @ (14 + 4) + 12 - 2 # 3
+   = 6 @ 18 + 12 - 2 # 3
+
+2. Then, we solve the concatenation operation from left to right:
+   = 618 + 12 - 2 # 3
+
+3. Next, we calculate the addition:
+   = 618 + 12 - 2 # 3
+   = 618 + 12 - 2 # 3
+   = 618 + 12 - 1 (as 2 and 3 have no shared prime factors)
+   = 618 + 12 - 1
+
+4. Now, we perform the concatenation operation:
+   = 618 + 12 - 1
+   = 61812 - 1
+
+5. Finally, we evaluate the subtraction:
+   = 61812 - 1
+   = 61811
+
+The answer is 61811."
+gpt-3.5-turbo-1106,1,400,systemPrompt3,5+3 # 2,"GPT Response: To solve the given expression 5 + 3 # 2, we need to follow the updated order of operations, PEFMDASC:
+
+1. Parentheses (none)
+2. Exponents (none)
+3. Prime Factor Counting (F)
+4. Multiplication/Division
+5. Addition/Subtraction
+6. Concatenation (C)
+
+Following the order of operations:
+5 + 3 # 2
+= 5 + 1   (since the prime factor counting gives 1)
+= 6
+
+Therefore, the answer is 6."
+gpt-3.5-turbo-1106,1,400,systemPrompt4,5 + 2@4,"GPT Response: Sure, I can help with that! We'll solve the expression step by step using the PEFMDASC order of operations, which includes the new operations of Concatenation (C) and Prime Factor Counting (F).
+
+Step 1: Prime Factor Counting (F)
+Since there are no parentheses or exponents, we start with prime factor counting. However, in this case, there are no shared prime factors between 2 and 4, so the count of shared prime factors is 0.
+
+5 + 2@4
+= 5 + 0
+
+Step 2: Addition (A)
+Now, we perform addition.
+
+5 + 0
+= 5
+
+Therefore, the answer is 5."
+gpt-3.5-turbo-1106,1,400,systemPrompt4,8 # 2+6 # 6,"GPT Response: To solve the given expression using the updated order of operations (PEFMDASC), we'll follow these steps:
+
+Step 1: Evaluate Prime Factor Counting (#) first.
+Step 2: Perform Addition (A) next.
+Step 3: Perform the second Prime Factor Counting (#).
+
+Now, let's solve the given expression step by step.
+
+Step 1:
+8 # 2 = 1
+(Prime factors of 8: 2,  Prime factors of 2: 2; the shared prime factor is 2)
+
+Step 2:
+8 # 2 + 6 = 1 + 6
+= 7
+
+Step 3:
+7 # 6 = 0
+(Prime factors of 7: 7; Prime factors of 6: 2, 3; there are no shared prime factors)
+
+Therefore, the final answer is 0. 
+The answer is 0."
+gpt-3.5-turbo-1106,1,400,systemPrompt4,4#3 + 2,"GPT Response: Sure, I can help with that! We'll solve the expression step by step using the PEFMDASC order of operations, which includes the new operations.
+
+Given expression: 4#3 + 2
+
+Step 1: Prime Factor Counting
+4#3 = 0 (since there are no shared prime factors between 4 and 3)
+
+Step 2: Addition
+0 + 2 = 2
+
+Therefore, the answer is 2."
+gpt-3.5-turbo-1106,1,400,systemPrompt4,6 @ (14+4) + 12 - 2#3,"GPT Response: Sure! Let's break this down step by step according to the PEFMDASC order.
+
+Step 1: Parentheses
+We need to solve the expression inside the parentheses first.
+14 + 4 = 18
+
+The expression becomes: 6 @ 18 + 12 - 2#3
+
+Step 2: Concatenation
+Now we need to perform the concatenation operation.
+6 @ 18 = 618
+
+The expression becomes: 618 + 12 - 2#3
+
+Step 3: Prime Factor Counting
+Next, we need to calculate the shared prime factors between 2 and 3.
+2 # 3 = 1 (There is 1 shared prime factor, which is 3)
+
+The expression becomes: 618 + 12 - 1
+
+Step 4: Addition
+Now we perform the addition operation.
+618 + 12 = 630
+
+The expression becomes: 630 - 1
+
+Step 5: Subtraction
+Finally, we perform the subtraction operation.
+630 - 1 = 629
+
+The answer is 629."
+gpt-3.5-turbo-1106,1,400,systemPrompt4,5+3 # 2,"GPT Response: Sure, I can help with that. Let's solve the expression step by step using the PEFMDASC order.
+
+Step 1: Prime Factor Counting
+5 # 3 = 0
+Since the prime factors of 5 are 5, and the prime factors of 3 are 3, there are no shared prime factors, so the result of the prime factor counting is 0.
+
+Step 2: Addition
+5 + 0 = 5
+We add 5 and 0 to get the final result.
+
+The answer is 5."

@@ -1,0 +1,309 @@
+temperature,max_output_tokens,system_prompt,user_prompt,systemPrompt
+1,,systemPrompt1,5 + 2 @ 4,"1. First, we evaluate the concatenation operation 2 @ 4, which results in 24.
+2. Then, we perform the addition operation 5 + 24, which results in 29.
+3. Therefore, the answer is 29.
+
+The answer is 29."
+1,,systemPrompt1,8 # 2 + 6 # 6,"**Problem:**
+
+8 # 2 + 6 # 6
+
+**Solution:**
+
+1. **Prime Factor Counting:**
+
+   - 8 # 2 = 1 (since the only shared prime factor between 8 and 2 is 2)
+   - 6 # 6 = 1 (since the only shared prime factor between 6 and 6 is 2)
+
+2. **Addition:**
+
+   - 1 + 1 = 2
+
+**Answer:**
+
+The answer is 2."
+1,,systemPrompt1,4 # 3 + 2,"1. **4 # 3** = 1 (since the only shared prime factor between 4 and 3 is 1).
+2. **1 + 2** = 3
+
+The answer is 3."
+1,,systemPrompt1,6 @ (14 + 4) + 12 - 2 # 3,"Given:
+
+$$6 @ (14 + 4) + 12 - 2 # 3$$
+
+Following the order of operations (PEFMDASC):
+
+1. **Parentheses:**
+
+$$6 @ (14 + 4) + 12 - 2 # 3$$
+
+$$6 @ (18) + 12 - 2 # 3$$
+
+2. **Prime Factor Counting:**
+
+$$6 @ (18) + 12 - 2 \# 3$$
+
+$$6 @ (18) + 12 - 1 \# 3$$
+
+3. **Concatenation:**
+
+$$6 @ (18) + 12 - 1 \# 3$$
+
+$$618 + 12 - 1 \# 3$$
+
+4. **Addition and Subtraction (from left to right):**
+
+$$618 + 12 - 1 \# 3$$
+
+$$630 - 1 \# 3$$
+
+5. **Prime Factor Counting:**
+
+$$630 - 1 \# 3$$
+
+$$630 - 0 \# 3$$
+
+6. **Subtraction:**
+
+$$630 - 0 \# 3$$
+
+$$630 \# 3$$
+
+7. **Prime Factor Counting:**
+
+$$630 \# 3$$
+
+$$2 \# 3$$
+
+**The answer is 2.**"
+1,,systemPrompt1,5 + 3 # 2,"1. First, evaluate the Prime Factor Counting operation:
+3 # 2 = 1 (since the only shared prime factor between 3 and 2 is 2)
+
+2. Then, perform the Addition operation:
+5 + 1 = 6
+
+The answer is 6."
+1,,systemPrompt2,5 + 2 @ 4,"Given:
+
+5 + 2 @ 4
+
+Explanation:
+
+1. First, we evaluate the concatenation operation:
+
+2 @ 4 = 24
+
+2. Next, we perform the addition:
+
+5 + 24 = 29
+
+Answer:
+
+The answer is 29."
+1,,systemPrompt2,8 # 2 + 6 # 6,"**Given:**
+
+8 # 2 + 6 # 6
+
+**Solution:**
+
+1. **Prime Factor Counting:**
+
+   - 8 # 2 = 1 (since the only shared prime factor is 2)
+   - 6 # 6 = 1 (since the only shared prime factor is 2)
+
+2. **Addition:**
+
+   - 1 + 1 = 2
+
+**Answer:**
+
+The answer is 2."
+1,,systemPrompt2,4 # 3 + 2,"Given: 4 # 3 + 2
+
+Explanation:
+
+1. Prime Factor Counting (F):
+   - 4 # 3 = 1 (Since the only shared prime factor between 4 and 3 is 2.)
+
+2. Addition (+):
+   - 1 + 2 = 3
+
+The answer is 3."
+1,,systemPrompt2,6 @ (14 + 4) + 12 - 2 # 3,"**Problem:**
+
+6 @ (14 + 4) + 12 - 2 # 3
+
+**Solution:**
+
+1. Start with the parentheses:
+
+(14 + 4) = 18
+
+2. Perform the concatenation:
+
+6 @ 18 = 618
+
+3. Add the next number:
+
+618 + 12 = 630
+
+4. Subtract the next number:
+
+630 - 2 = 628
+
+5. Perform the prime factor counting:
+
+2 # 3 = 1 (since the only shared prime factor between 2 and 3 is 2)
+
+6. Complete the remaining operations (left to right):
+
+628 - 1 = 627
+
+**Answer:**
+
+The answer is 627."
+1,,systemPrompt2,5 + 3 # 2,"Using the updated order of operations (PEFMDASC), we evaluate the expression as follows:
+
+1. Prime Factor Counting (#):
+   - Calculate the number of unique prime factors shared by the absolute values of 3 and 2.
+   - Prime factors of 3 are 3.
+   - Prime factors of 2 are 2.
+   - Shared prime factor: 2.
+   - 3 # 2 = 1 (since there is only one shared prime factor)
+
+2. Addition (+):
+   - Add the result of prime factor counting to 5.
+   - 5 + 1 = 6
+
+The answer is 6.
+
+Therefore, the final answer in the form ""The answer is __."" is:
+```
+The answer is 6.
+```"
+1,,systemPrompt3,5 + 2 @ 4,"1. **Addition:** First, we perform the addition operation:
+    ```
+    5 + 2 = 7
+    ```
+
+2. **Concatenation:** Next, we perform the concatenation operation between 7 and 4:
+    ```
+    7 @ 4 = 74
+    ```
+
+Therefore, the final answer is:
+
+**The answer is 74.**"
+1,,systemPrompt3,8 # 2 + 6 # 6,"Given:
+8 # 2 + 6 # 6
+
+Explanation:
+1. Prime Factor Counting (#):
+   - 8 # 2 = 1 (2 is the only common prime factor between 8 and 2)
+   - 6 # 6 = 1 (2 and 3 are the prime factors of 6, and 2 is the only common prime factor between 6 and 6)
+
+2. Addition (+):
+   - 1 + 1 = 2
+
+Final Answer:
+The answer is 2."
+1,,systemPrompt3,4 # 3 + 2,"1. Prime Factor Counting (F):
+   - 4 # 3 = 1 (2 is the only shared prime factor between 4 and 3)
+2. Addition (+)
+   - 1 + 2 = 3
+
+The answer is 3."
+1,,systemPrompt3,6 @ (14 + 4) + 12 - 2 # 3,"1. **Concatenation (@):**
+    - (14 + 4) = 18
+    - 6 @ 18 = 618
+
+2. **Addition (+):**
+    - 618 + 12 = 630
+
+3. **Subtraction (-):**
+    - 630 - 2 = 628
+
+4. **Prime Factor Counting (#):**
+    - 2 # 3 = 0 (2 and 3 have no common prime factors)
+
+5. **Putting it all together:**
+    - 628 - 0 = 628
+
+**The answer is 628.**"
+1,,systemPrompt3,5 + 3 # 2,"1. According to the new order of operations (PEFMDASC), we first evaluate prime factor counting (#).
+2. 3 # 2 = 1 (since the only shared prime factor between 3 and 2 is 2).
+
+3. Now, we proceed to addition (+).
+4. 5 + 1 = 6.
+
+The answer is 6."
+1,,systemPrompt4,5 + 2 @ 4,"1. Start with the concatenation operation (@) since it has the highest precedence in the PEFMDASC order.
+2. Evaluate 2 @ 4:
+   - Join the digits of 2 and 4 together: 24.
+3. Now, we have the expression: 5 + 24.
+4. Moving on to addition (+), which has a lower precedence than concatenation:
+   - Add 5 and 24: 29.
+The answer is 29."
+1,,systemPrompt4,8 # 2 + 6 # 6,"1. **Prime Factor Counting:**
+   - 8 # 2 = 1 (prime factors of 8 are 2, 2, 2 and prime factor of 2 is 2. Only 2 is a shared prime factor.)
+   - 6 # 6 = 1 (prime factors of 6 are 2, 3 and prime factors of 6 are 2, 3. Only 2 is a shared prime factor.)
+2. **Addition:**
+   - 1 + 1 = 2
+
+The answer is 2."
+1,,systemPrompt4,4 # 3 + 2,"**Problem:** 4 # 3 + 2
+
+**Step 1: Prime Factor Counting (F)**
+
+Find the count of unique prime factors shared between the absolute values of 4 and 3.
+
+| Number | Prime Factors |
+|---|---|
+| 4 | 2 |
+| 3 | 3 |
+
+There is no shared prime factor between 4 and 3.
+
+4 # 3 = 0
+
+**Step 2: Addition (+)**
+
+Add the results of prime factor counting and 2.
+
+0 + 2 = 2
+
+**Answer:**
+
+The answer is 2."
+1,,systemPrompt4,6 @ (14 + 4) + 12 - 2 # 3,"Applying the PEFMDASC order of operations:
+
+1. **Parentheses**:
+
+   - 14 + 4 = 18
+
+2. **Concatenation**:
+
+   - 6 @ 18 = 618
+
+3. **Addition and Subtraction (left to right)**:
+
+   - 618 + 12 = 630
+   - 630 - 2 = 628
+
+4. **Prime Factor Counting**:
+
+   - 2 # 3 = 0 (2 and 3 have no shared prime factors)
+
+5. **Final Result**:
+
+   - 628 - 0 = 628
+
+The answer is 628."
+1,,systemPrompt4,5 + 3 # 2,"Given: 5 + 3 # 2
+
+Step 1 (Prime Factor Counting):
+3 # 2 = 1 (2 and 3 are prime numbers, and they share only 1 unique prime factor, which is 2.)
+
+Step 2 (Addition):
+5 + 1 = 6
+
+The answer is 6."

@@ -1,0 +1,91 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Data Table</title>
+                    <script type="text/javascript" async
+                    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+                    </script>
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 100%;
+                            table-layout: fixed;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: left;
+                            word-wrap: break-word;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Data Overview</h1>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>temperature</th>
+      <th>user_prompt</th>
+      <th>systemPrompt1</th>
+      <th>systemPrompt2</th>
+      <th>systemPrompt3</th>
+      <th>systemPrompt4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>4*(2+5)+12-2*3</td>
+      <td>GPT Response: To solve this problem, we need to remember the order of operations. First, we need to simplify inside the parentheses. So, we add 2 and 5, which equals 7. Next, we multiply 4 by 7, which gives us 28. Then, we add 12 to 28, which gives us 40. Finally, we subtract 2 times 3, which is 6, from 40. <br>The answer is 34.</td>
+      <td>GPT Response: To solve this problem, I will first solve anything inside parentheses. In this case, there is a sum inside the parentheses, which is 2 + 5 = 7. <br><br>Next, I will multiply 4 with the sum of 2 + 5, which is 4 * 7 = 28. <br><br>After that, I will calculate the multiplication of 2 * 3, which is 2 * 3 = 6. <br><br>Next, I will subtract the product of 2 * 3 from 12, which is 12 - 6 = 6. <br><br>Finally, I will add the result from the previous step (6) with the product of 4 * 7 (28), which is 6 + 28 = 34. <br><br>Therefore, the answer is 34.</td>
+      <td>GPT Response: Um, well, I don't really know much about how to solve math problems with order of operations, but I think I just need to solve it step by step. First, inside the parentheses I see 2 plus 5, which is 7. So, it's 4 times 7. Then, I add 12 to that, which gives me 40. After that, I have to subtract 2 times 3, which is 6. So, the final answer is 40 minus 6. The answer is 34.</td>
+      <td>GPT Response: So, in this problem, we have to solve the numbers and operations step by step. First, I see there are parentheses, so I need to solve that part first. Inside the parentheses, it says 2+5, which equals to 7. <br>Then, I see there is multiplication, so I need to solve that next. 4 times 7 equals 28. <br>Next, I see addition and subtraction, so I solve those in order from left to right. 28 plus 12 is 40. <br>Finally, 2 times 3 equals 6. <br>Now, I need to subtract 6 from 40. So the final answer is 40-6, which equals 34. <br>The answer is 34.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>4*3+2</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations. First, we perform the multiplication. So, 4 multiplied by 3 is equal to 12. Then, we add 2 to the result. Therefore, the answer is 14.</td>
+      <td>GPT Response: To solve this problem, I will start by multiplying 4 and 3, which equals 12. Then, I will add 2 to 12, which equals 14. <br><br>The answer is 14.</td>
+      <td>GPT Response: Um, I don't really know what order of operations means, but I remember my teacher saying that sometimes you have to solve multiplication before addition. So, I'll start by multiplying 4 by 3, which is 12. Then, I add 2 to that, which gives me 14. <br><br>So, the answer is 14.</td>
+      <td>GPT Response: To solve this problem, I need to follow the order of operations. First, I need to do the multiplication, which is 4*3. This gives me 12. Then, I need to add 2 to that result. So, 12+2 equals 14. <br>The answer is 14.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>5+2*4</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations. First, we perform the multiplication. So, 2 multiplied by 4 equals 8. Then, we add 5 to 8. So, the answer is 13.</td>
+      <td>GPT Response: To solve this problem, I will start by following the numbers from left to right. First, I add 5 and 2, which equals 7. Then, I multiply 7 by 4, which gives me 28. Therefore, the answer is 28.</td>
+      <td>GPT Response: Um, I don't really know what to do here. I guess I'll just do the operations from left to right. So, 5 plus 2 is 7, and then I'll multiply that by 4. So, the answer is 7 times 4, which is 28.</td>
+      <td>GPT Response: In this math problem, we have to add 5 to the result of multiplying 2 and 4. Since I'm not familiar with order of operations, I'll just solve it from left to right. First, I will multiply 2 and 4 which equals to 8. And then I will add 5 to 8 which equals to 13. So, the answer is 13.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>5+3*2</td>
+      <td>GPT Response: To solve this problem, we need to follow the order of operations. First, we perform the multiplication. So, 3 multiplied by 2 equals 6. Then, we add 5 to 6. So, the answer is 11.</td>
+      <td>GPT Response: To solve this problem, I will start by following the numbers from left to right. First, I will add 5 and 3, which equals 8. Then, I will multiply 8 by 2, which equals 16. So, the answer is 16.</td>
+      <td>GPT Response: Um, I don't really know what to do here. I guess I'll just do the operations from left to right. So, 5 plus 3 is 8, and then times 2 is... um... I think it's 16! Yeah, the answer is 16.</td>
+      <td>GPT Response: In this math problem, we have to follow the order of operations. First, we need to do the multiplication, which is 3*2. This gives us 6. Then, we can add 6 to 5. <br>So, 5+3*2 is equal to 5+6. Adding 5 and 6 gives us 11.<br><br>The answer is 11.</td>
+    </tr>
+    <tr>
+      <td>gpt-3.5-turbo-0613</td>
+      <td>1</td>
+      <td>7*2+8*5</td>
+      <td>GPT Response: To solve this math problem, you need to follow the order of operations, which is a set of rules to help you solve calculations in the correct order. The order of operations is represented by the acronym PEMDAS, which stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).<br><br>First, there are no parentheses or exponents in this problem, so we can move on to the next step. <br><br>Next, we need to perform the multiplication and division from left to right. There are two multiplications in this problem: 7 multiplied by 2, and 8 multiplied by 5. We can start with 7*2, which equals 14. Then, we can do 8*5, which equals 40.<br><br>Lastly, we need to perform the addition and subtraction from left to right. In this case, we only have addition. We add 14 and 40 together, which equals 54.<br><br>Therefore, the answer is 54.</td>
+      <td>GPT Response: To solve this problem, I will just do the operations from left to right without using any order of operations. <br>First, I will multiply 7 by 2, which equals 14.<br>Then, I will multiply 8 by 5, which equals 40.<br>Finally, I will add 14 and 40 together.<br><br>The answer is 54.</td>
+      <td>GPT Response: To solve this problem, I need to do the calculations in the right order. First, I will multiply 7 by 2 which equals 14. Then, I will multiply 8 by 5 which equals 40. Finally, I will add 14 and 40 which equals 54. So the answer is 54.</td>
+      <td>GPT Response: To solve this problem, I will first multiply 7 and 2, which gives me 14. Then, I will multiply 8 and 5, which gives me 40. Finally, I will add 14 and 40. <br>The answer is 54.</td>
+    </tr>
+  </tbody>
+</table>
+                </body>
+                </html>
+                
